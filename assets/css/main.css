@@ -1,0 +1,9744 @@
+@font-face {
+  font-family: gothamMedium;
+  src: url(../Fonts/GothamHTF-Medium.otf); }
+
+@font-face {
+  font-family: gothamBook;
+  src: url(../Fonts/GothamHTF-Book.otf); }
+
+@font-face {
+  font-family: gothamLight;
+  src: url(../Fonts/GothamHTF-Light.otf); }
+
+@font-face {
+  font-family: gothamBold;
+  src: url(../Fonts/GothamHTF-Bold.otf); }
+
+@font-face {
+  font-family: gothamThin;
+  src: url(../Fonts/GothamHTF-Thin.otf); }
+
+@font-face {
+  font-family: rockSalt;
+  src: url("../Fonts/Rock Salt regular.ttf"); }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../Fonts/custom.eot?33688546");
+  src: url("../Fonts/custom.eot?33688546#iefix") format("embedded-opentype"), url("../Fonts/custom.woff?33688546") format("woff"), url("../Fonts/custom.ttf?33688546") format("truetype"), url("../Fonts/custom.svg?33688546#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: gothamLight;
+  overflow-x: hidden;
+  color: white; }
+
+a, a:hover, a:active, a:focus {
+  color: white; }
+
+.nav {
+  font-family: gothamBook;
+  font-size: 24pt; }
+
+nav.navbar > .container {
+  width: 100%; }
+
+.navbar-imminent {
+  background-color: #1786BE;
+  border-color: #1786BE; }
+
+.navbar-nav > li {
+  margin-right: 1rem;
+  font-size: 2rem; }
+
+.navbar-nav > li > a:hover, .navbar-nav > li.active, .navbar-nav > li > a:focus, .dropdown-menu > li > a:focus, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #045379 !important; }
+
+.navbar-brand {
+  padding-top: 0; }
+
+.navbar-brand > img {
+  width: 27rem;
+  margin-top: 0.5rem; }
+
+.navbar-toggle {
+  border-color: white; }
+
+.navbar-toggle .icon-bar {
+  background-color: white; }
+
+.dropdown-menu {
+  background-color: #1786BE; }
+
+.dropdown-menu > li > a {
+  color: white; }
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color: #045379;
+  color: white; }
+
+section {
+  height: 100%;
+  text-align: center; }
+
+section > .container {
+  width: 80%;
+  height: 100%; }
+
+section .title {
+  font-family: gothamBold;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center; }
+
+section .content {
+  font-family: gothamLight;
+  font-size: 36pt;
+  color: black;
+  background-color: white;
+  bottom: 0;
+  display: flex;
+  align-items: center; }
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000; }
+
+.welcome video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -101;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
+  overflow: hidden; }
+
+.welcome {
+  background: transparent; }
+
+.welcome .container {
+  background: transparent;
+  display: flex;
+  align-items: center; }
+
+.welcome h1 {
+  font-family: gothamBold;
+  font-size: 5vw;
+  margin: 0;
+  color: black; }
+
+.welcome .subTitle {
+  font-family: gothamBook;
+  font-size: 1.2vw;
+  margin: 0;
+  color: black;
+  margin-bottom: 2rem; }
+
+.welcome a.requestButton {
+  cursor: pointer;
+  text-decoration: none; }
+
+.welcome a.requestButton, .sayHello .sayHelloForm a.requestButton {
+  background: white;
+  border: 1px grey solid;
+  border-radius: 0;
+  padding: 1rem;
+  font-family: gothamBook;
+  width: 15rem;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  color: grey; }
+
+.welcome a.requestButton:hover, .sayHello .sayHelloForm button:hover {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.welcome .slant-right {
+  position: absolute;
+  background-color: rgba(23, 134, 190, 0.84);
+  height: 150%;
+  width: 150%;
+  top: 0;
+  left: -50px;
+  transform: rotate(-55deg);
+  -webkit-transform: rotate(-55deg);
+  z-index: -101; }
+
+.welcome .socialMediaIcons > ul > li {
+  padding: 2rem;
+  margin-top: 2rem; }
+
+.welcome .socialMediaIcons .fa {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.6rem;
+  border-radius: 100%; }
+
+.welcome .socialMediaIcons .fa-facebook {
+  background-color: #3b5998; }
+
+.welcome .socialMediaIcons .fa-twitter {
+  background-color: #55acee; }
+
+.welcome .socialMediaIcons .fa-instagram {
+  background-color: #833ab4; }
+
+.welcome .socialMediaIcons .fa-linkedin {
+  background-color: #0077b5; }
+
+.bigIdea {
+  height: 75%;
+  text-align: left;
+  display: flex;
+  align-items: center; }
+
+.bigIdea .container {
+  height: auto; }
+
+.bigIdea .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 65pt;
+  padding-right: 0;
+  text-align: left;
+  font-family: gothamBold; }
+
+.bigIdea .content {
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  font-family: gothamBook;
+  font-size: 17pt; }
+
+.bigIdea p {
+  margin-bottom: 3rem; }
+
+.percent {
+  background: white;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.percent .content {
+  height: 100%; }
+
+.percent p {
+  margin-top: 2rem;
+  font-family: gothamBook;
+  font-size: 28pt; }
+
+.percent p:nth-child(2) {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-family: gothamBook;
+  font-size: 28pt; }
+
+.how {
+  text-align: left;
+  background: url(../images/texture/bg-texture-light-blue.jpg);
+  height: auto; }
+
+.how .title {
+  font-family: gothamLight;
+  background: transparent;
+  text-align: center;
+  height: 20%;
+  align-items: flex-end; }
+
+.how .title h1 {
+  font-size: 55pt; }
+
+.how .content {
+  background: transparent;
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+.how .sliceLoading {
+  height: 500px; }
+
+.how .sliceType {
+  font-family: rockSalt;
+  font-size: 25pt;
+  color: rgba(255, 255, 255, 0.5); }
+
+.how .sliceTitle {
+  color: white;
+  font-family: gothamBold;
+  font-size: 20pt; }
+
+.how .sliceDescription {
+  color: white;
+  font-family: gothamBook;
+  font-size: 15pt; }
+
+.how .sliceImage {
+  max-height: 420px; }
+
+.how .footer {
+  height: 20%; }
+
+.ball-scale-ripple-multiple > div {
+  width: 150px;
+  height: 150px; }
+
+.howMobile {
+  display: none;
+  height: auto;
+  min-height: 100%;
+  background: url(../images/texture/bg-texture-light-blue.jpg); }
+
+.howMobile .steps {
+  background: transparent;
+  display: block;
+  color: white; }
+
+.howMobile .steps p {
+  font-size: 16pt; }
+
+.howMobile .steps .step img {
+  width: 70%; }
+
+.fillerImage {
+  height: 40%; }
+
+.capabilities {
+  height: auto;
+  padding-top: 6rem; }
+
+.capabilities .container {
+  width: 95%; }
+
+.capabilities .title {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  padding: 0; }
+
+.capabilities .title h1 {
+  font-size: 42pt;
+  font-family: gothamThin;
+  color: #1786BE; }
+
+.capabilities .content {
+  height: 65%;
+  font-size: 26pt;
+  color: grey;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start; }
+
+.capabilities .itemTitle {
+  font-family: gothamBold;
+  color: #1786BE;
+  margin-bottom: 1rem; }
+
+.capabilities .itemTitle h2 {
+  font-size: 24pt; }
+
+.capabilities .itemDescription {
+  font-size: 14pt; }
+
+.capabilities .item:nth-child(even) {
+  color: black; }
+
+.mission {
+  height: auto;
+  padding-top: 6rem; }
+
+.mission .title {
+  display: block;
+  font-family: gothamThin;
+  color: #1786BE;
+  padding: 0; }
+
+.mission .title h1 {
+  font-size: 42pt; }
+
+.mission .container {
+  height: 100%;
+  display: block; }
+
+.mission .content p {
+  font-size: 18pt; }
+
+.team {
+  height: auto;
+  margin-top: 5rem; }
+
+.team .content {
+  justify-content: center; }
+
+.team .title h1 {
+  color: black;
+  font-family: gothamThin;
+  font-size: 30pt; }
+
+.team .members {
+  height: 100%;
+  margin-top: 4rem; }
+
+.team .members .member {
+  height: 275px;
+  width: 275px;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.team .members .member.cj {
+  background-image: url(../images/members/CJ.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.michael {
+  background-image: url(../images/members/Michael.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.audra {
+  background-image: url(../images/members/Audra.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.adam {
+  background-image: url(../images/members/Adam.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.todd {
+  background-image: url(../images/members/Todd.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.peter {
+  background-image: url(../images/members/Peter.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.david {
+  background-image: url(../images/members/David.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.robert {
+  background-image: url(../images/members/Robert.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.douglas {
+  background-image: url(../images/members/Douglas.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.nida {
+  background-image: url(../images/members/Nida.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.kate {
+  background-image: url(../images/members/Kate.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.imminent {
+  background-image: url(../images/members/imminent.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .members .member.hiring {
+  background-image: url(../images/members/hiring.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.team .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.team .info {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  color: transparent;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s; }
+
+.team .info .name, .team .info .title {
+  padding: 0;
+  margin: 0; }
+
+.team .info .name {
+  font-family: gothamBook;
+  font-size: 16pt; }
+
+.team .info .title {
+  font-family: gothamThin;
+  font-size: 12pt;
+  text-align: center;
+  display: block; }
+
+.team .members .member:hover .info {
+  top: 68%;
+  color: white; }
+
+.team .members .member:hover .overlay {
+  background-color: transparent; }
+
+.memberModal, .memberModal a {
+  color: black; }
+
+.memberModal .icon-vcf, .memberModal .fa-envelope {
+  color: #1786BE; }
+
+.memberModal .fa-linkedin {
+  color: #0077b5; }
+
+.hiringModal {
+  text-align: center;
+  color: black; }
+
+.sayHello {
+  background: url(../images/background/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto; }
+
+.sayHello .title {
+  margin: 0;
+  padding: 0;
+  height: 10%; }
+
+.sayHello .sayHelloForm {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); }
+
+.sayHello .sayHelloForm .title {
+  width: 100%; }
+
+.sayHello .sayHelloForm button {
+  width: 17rem;
+  margin: 0; }
+
+.sayHello .sayHelloForm button:hover {
+  color: white; }
+
+.sayHello .title h1 {
+  font-family: gothamBook;
+  font-size: 60pt;
+  margin-bottom: 0; }
+
+.sayHello .content {
+  background-color: transparent;
+  color: white;
+  font-size: 15pt;
+  height: 80%; }
+
+.sayHello .footer {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  display: flex;
+  align-items: center; }
+
+.sayHello .footer address {
+  font-size: 1.5rem; }
+
+.sayHello .footer address > strong {
+  font-weight: 700;
+  font-size: 1.75rem; }
+
+.locations {
+  height: 25%; }
+
+.locations .title {
+  display: block;
+  padding-top: 2rem; }
+
+.locations .title h1 {
+  color: black;
+  font-family: gothamThin; }
+
+.locations .content {
+  display: block; }
+
+.locations .content h2 {
+  font-family: gothamBold;
+  font-weight: bold;
+  color: #3c3c3c; }
+
+.locations .content p {
+  font-size: 10pt;
+  font-family: gothamBook;
+  color: grey; }
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem; }
+
+footer a {
+  color: white; }
+
+footer .fa {
+  margin-right: 3rem; }
+
+.search {
+  text-align: left;
+  color: black;
+  height: 100%; }
+
+.search .container {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.search .searchBar {
+  margin-top: 5rem; }
+
+.search-label {
+  color: black;
+  font-size: 4rem;
+  padding-left: 1.5rem; }
+
+.search h2 {
+  color: #1786BE;
+  font-weight: bold; }
+
+.search img {
+  width: 500px; }
+
+.search video {
+  width: 40%; }
+
+.search p {
+  font-size: 18pt; }
+
+.search input[name="search"] {
+  height: 5rem;
+  margin-bottom: 3rem; }
+
+.search button {
+  height: 5rem; }
+
+.search .wrapper {
+  width: auto;
+  position: relative; }
+
+.search .playpause {
+  background-image: url(../images/white_playpause.svg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center; }
+
+.videos {
+  height: auto; }
+
+.videos .results .thumbnail .caption .title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0;
+  display: block; }
+
+.videoModal {
+  color: black; }
+
+.videoModal .score {
+  font-size: 12rem; }
+
+.videoModal .videoLoader {
+  height: 30rem; }
+
+.videoModal .loaderWrapper {
+  margin-left: 50%;
+  padding-top: 13rem; }
+
+.videoModal .ball-clip-rotate-multiple > div {
+  border-color: #1786BE;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  height: 80px;
+  width: 80px; }
+
+.videoModal .ball-clip-rotate-multiple > div:last-child {
+  top: 0;
+  left: 2px;
+  width: 35px;
+  height: 35px; }
+
+#search video {
+  position: relative; }
+
+#podcast {
+  color: black;
+  height: auto;
+  padding-top: 9rem; }
+
+#podcast .container {
+  height: auto;
+  width: 100%; }
+
+#podcast .podcasts .podcast > .title > span {
+  color: grey; }
+
+#podcast a {
+  color: #1786BE; }
+
+.audiojs {
+  background-image: none;
+  background-color: #E2E2E2;
+  width: 325px; }
+
+.audiojs .play-pause {
+  padding: 3px 3px;
+  width: 30px; }
+
+.audiojs .scrubber {
+  margin: 10px 10px;
+  height: 16px;
+  width: 150px; }
+
+.audiojs .play, .audiojs .pause, .audiojs .loading, .audiojs .error {
+  background-size: 1.5rem;
+  background-position: 5px 8px; }
+
+.audiojs .play {
+  background-image: url("../images/player/play.png"); }
+
+.audiojs .loading {
+  background-image: url("../images/player/loading.gif"); }
+
+.audiojs .error {
+  background-image: url("../images/player/error.png"); }
+
+.audiojs .pause {
+  background-image: url("../images/player/pause.png"); }
+
+.audiojs .time {
+  text-shadow: none;
+  color: black;
+  line-height: 38px; }
+
+.audiojs .time em {
+  color: black; }
+
+.audiojs .error-message {
+  color: black; }
+
+.podcasts > .podcast {
+  margin-bottom: 3rem; }
+
+.podcasts > .podcast > .title {
+  font-size: 2rem;
+  border-bottom: black 1px solid;
+  margin-bottom: 1rem; }
+
+.podcasts > .podcast > .title > span {
+  font-size: 1.3rem;
+  float: right; }
+
+.podcasts > .podcast > .description {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem; }
+
+#blog {
+  padding-top: 10rem;
+  color: black; }
+
+#blog .blogList > .row {
+  height: 300px; }
+
+#blog .blogList > .row h2 {
+  margin-top: 0; }
+
+.artical {
+  color: black; }
+
+.artical a {
+  color: #1786BE; }
+
+label.btn span {
+  font-size: 2rem; }
+
+label input[type="radio"] ~ i.fa.fa-circle-o {
+  color: lightgray;
+  display: inline; }
+
+label input[type="radio"] ~ i.fa.fa-dot-circle-o {
+  display: none; }
+
+label input[type="radio"]:checked ~ i.fa.fa-circle-o {
+  display: none; }
+
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o {
+  color: lightgray;
+  display: inline; }
+
+label:hover input[type="radio"] ~ i.fa {
+  color: white; }
+
+label input[type="checkbox"] ~ i.fa.fa-square-o {
+  color: #c8c8c8;
+  display: inline; }
+
+label input[type="checkbox"] ~ i.fa.fa-square {
+  display: none; }
+
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
+  display: none; }
+
+label input[type="checkbox"]:checked ~ i.fa.fa-square {
+  color: lightgray;
+  display: inline; }
+
+label:hover input[type="checkbox"] ~ i.fa {
+  color: white; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 2rem; }
+
+textarea[type="text"] {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.7); }
+
+div[data-toggle="buttons"] label.active {
+  color: lightgray; }
+
+div[data-toggle="buttons"] label {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: none;
+  border: 0px solid  #c8c8c8;
+  border-radius: 3px;
+  color: #c8c8c8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+div[data-toggle="buttons"] label:hover {
+  color: white; }
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder {
+  color: #323232;
+  font-size: 2rem; }
+
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="tel"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #323232;
+  font-size: 2rem; }
+
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="tel"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #323232;
+  font-size: 2rem; }
+
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder {
+  color: #323232;
+  font-size: 2rem; }
+
+.pp {
+  color: black; }
+
+.btn-imminent {
+  background-color: #1786BE;
+  color: white; }
+
+.btn-imminent:hover {
+  color: white; }
+
+.text-sideways {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+
+.line {
+  border: white 5px solid; }
+
+.superSize {
+  font-size: 30rem !important;
+  margin-bottom: 0; }
+
+.superSizeSmall {
+  font-size: 5rem;
+  color: white;
+  padding-top: 0; }
+
+.hidden {
+  display: none; }
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center; }
+
+.scroll {
+  overflow-y: scroll; }
+
+.background-blue {
+  background-color: rgba(0, 0, 255, 0.5); }
+
+.background-white {
+  background: white; }
+
+.text-imminentBlue {
+  color: #1786BE; }
+
+.text-imminentLightBlue {
+  color: #9bdbfc; }
+
+.text-bold {
+  font-weight: bold; }
+
+.circle {
+  height: 2rem;
+  width: 2rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  border-radius: 100%;
+  background-color: lightgray; }
+
+.fontello-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* You can be more comfortable with increased icons size */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.spacer-1 {
+  height: 1rem; }
+
+.spacer-2 {
+  height: 2rem; }
+
+.spacer-3 {
+  height: 3rem; }
+
+.spacer-4 {
+  height: 4rem; }
+
+.spacer-5 {
+  height: 5rem; }
+
+.spacer-6 {
+  height: 6rem; }
+
+.spacer-7 {
+  height: 7rem; }
+
+.spacer-8 {
+  height: 8rem; }
+
+.spacer-9 {
+  height: 9rem; }
+
+.spacer-10 {
+  height: 10rem; }
+
+.spacer-11 {
+  height: 11rem; }
+
+.spacer-12 {
+  height: 12rem; }
+
+.spacer-13 {
+  height: 13rem; }
+
+.spacer-14 {
+  height: 14rem; }
+
+.spacer-15 {
+  height: 15rem; }
+
+.spacer-16 {
+  height: 16rem; }
+
+.spacer-17 {
+  height: 17rem; }
+
+.spacer-18 {
+  height: 18rem; }
+
+.spacer-19 {
+  height: 19rem; }
+
+.spacer-20 {
+  height: 20rem; }
+
+.spacer-21 {
+  height: 21rem; }
+
+.spacer-22 {
+  height: 22rem; }
+
+.spacer-23 {
+  height: 23rem; }
+
+.spacer-24 {
+  height: 24rem; }
+
+.spacer-25 {
+  height: 25rem; }
+
+.spacer-26 {
+  height: 26rem; }
+
+.spacer-27 {
+  height: 27rem; }
+
+.spacer-28 {
+  height: 28rem; }
+
+.spacer-29 {
+  height: 29rem; }
+
+.spacer-30 {
+  height: 30rem; }
+
+.spacer-31 {
+  height: 31rem; }
+
+.spacer-32 {
+  height: 32rem; }
+
+.spacer-33 {
+  height: 33rem; }
+
+.spacer-34 {
+  height: 34rem; }
+
+.spacer-35 {
+  height: 35rem; }
+
+.spacer-36 {
+  height: 36rem; }
+
+.spacer-37 {
+  height: 37rem; }
+
+.spacer-38 {
+  height: 38rem; }
+
+.spacer-39 {
+  height: 39rem; }
+
+.spacer-40 {
+  height: 40rem; }
+
+.spacer-41 {
+  height: 41rem; }
+
+.spacer-42 {
+  height: 42rem; }
+
+.spacer-43 {
+  height: 43rem; }
+
+.spacer-44 {
+  height: 44rem; }
+
+.spacer-45 {
+  height: 45rem; }
+
+.spacer-46 {
+  height: 46rem; }
+
+.spacer-47 {
+  height: 47rem; }
+
+.spacer-48 {
+  height: 48rem; }
+
+.spacer-49 {
+  height: 49rem; }
+
+.spacer-50 {
+  height: 50rem; }
+
+.spacer-51 {
+  height: 51rem; }
+
+.spacer-52 {
+  height: 52rem; }
+
+.spacer-53 {
+  height: 53rem; }
+
+.spacer-54 {
+  height: 54rem; }
+
+.spacer-55 {
+  height: 55rem; }
+
+.spacer-56 {
+  height: 56rem; }
+
+.spacer-57 {
+  height: 57rem; }
+
+.spacer-58 {
+  height: 58rem; }
+
+.spacer-59 {
+  height: 59rem; }
+
+.spacer-60 {
+  height: 60rem; }
+
+.spacer-61 {
+  height: 61rem; }
+
+.spacer-62 {
+  height: 62rem; }
+
+.spacer-63 {
+  height: 63rem; }
+
+.spacer-64 {
+  height: 64rem; }
+
+.spacer-65 {
+  height: 65rem; }
+
+.spacer-66 {
+  height: 66rem; }
+
+.spacer-67 {
+  height: 67rem; }
+
+.spacer-68 {
+  height: 68rem; }
+
+.spacer-69 {
+  height: 69rem; }
+
+.spacer-70 {
+  height: 70rem; }
+
+@media (max-width: 767px) {
+  body {
+    height: auto;
+    padding-top: 5rem; }
+  section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
+  section .container {
+    width: 100%; }
+  section .title {
+    padding-top: 0; }
+  .navbar-brand > img {
+    width: 17rem;
+    margin-top: 1.2rem; }
+  .animation {
+    display: none; }
+  .welcome {
+    display: block; }
+  .welcome .container {
+    justify-content: center; }
+  .welcome .backgroundVideo {
+    display: none; }
+  .welcome .slant-right {
+    display: none; }
+  .welcome h1 {
+    font-size: 42pt; }
+  .welcome .subTitle {
+    font-size: 20pt; }
+  .welcome .socialMediaIcons > ul > li {
+    padding: 1rem; }
+  .bigIdea {
+    display: block;
+    height: 100%; }
+  .bigIdea .container {
+    height: 100%; }
+  .bigIdea .content {
+    height: 100%; }
+  .bigIdea .content h1 {
+    font-size: 35pt;
+    margin-bottom: 2rem; }
+  .percent {
+    display: block; }
+  .percent p {
+    font-size: 13pt; }
+  .percent p:nth-child(2) {
+    margin-top: 4rem;
+    font-size: 13pt; }
+  .how {
+    display: none; }
+  .howMobile {
+    display: block; }
+  .howMobile .title {
+    padding-top: 0; }
+  .fillerImage {
+    display: none; }
+  .capabilites {
+    display: block; }
+  .capabilites .container {
+    width: 100%; }
+  .capabilites .title {
+    height: auto;
+    display: block; }
+  .capabilites .content {
+    display: block; }
+  .mission {
+    display: block; }
+  .mission .content p {
+    font-size: 14pt; }
+  .team {
+    display: block;
+    height: auto;
+    padding-top: 0; }
+  .team .members .member .info {
+    top: 235px;
+    color: white; }
+  .memberModal img {
+    margin-bottom: 2rem; }
+  .sayHello {
+    display: block; }
+  .sayHello .content {
+    margin: 0; }
+  .sayHello .sayHelloForm h1 {
+    font-size: 40pt; }
+  .locations {
+    display: block; }
+  .locations .title {
+    padding-top: 0; }
+  footer {
+    display: block;
+    text-align: center; }
+  footer .text-right {
+    text-align: center; }
+  #blog {
+    padding: 0; }
+  #blog .post {
+    padding-bottom: 5rem; }
+  #search img {
+    width: 100%; }
+  #search video {
+    width: 100%; } }
+
+.st0 {
+  display: none; }
+
+.st1 {
+  display: inline;
+  fill: none;
+  stroke: #F3E0ED;
+  stroke-width: 1.185; }
+
+.st2 {
+  display: inline;
+  fill: none;
+  stroke: #F0DAEA;
+  stroke-width: 1.185; }
+
+.st3 {
+  display: inline;
+  fill: none;
+  stroke: #F5E4F0;
+  stroke-width: 1.185; }
+
+.st4 {
+  display: inline;
+  fill: none;
+  stroke: #F8EDF5;
+  stroke-width: 1.185; }
+
+.st5 {
+  display: inline;
+  fill: none;
+  stroke: #EED5E7;
+  stroke-width: 1.185; }
+
+.st6 {
+  display: inline;
+  fill: none;
+  stroke: #E6C4DE;
+  stroke-width: 1.185; }
+
+.st7 {
+  display: inline;
+  fill: none;
+  stroke: #E9C9E0;
+  stroke-width: 1.185; }
+
+.st8 {
+  display: inline;
+  fill: none;
+  stroke: #E1B7D6;
+  stroke-width: 1.185; }
+
+.st9 {
+  display: inline;
+  fill: none;
+  stroke: #DCAFD1;
+  stroke-width: 1.185; }
+
+.st10 {
+  display: inline;
+  fill: none;
+  stroke: #DFB4D4;
+  stroke-width: 1.185; }
+
+.st11 {
+  display: inline;
+  fill: none;
+  stroke: #E2BAD7;
+  stroke-width: 1.185; }
+
+.st12 {
+  display: inline;
+  fill: none;
+  stroke: #E6C0DB;
+  stroke-width: 1.185; }
+
+.st13 {
+  display: inline;
+  fill: none;
+  stroke: #F6E5F0;
+  stroke-width: 1.185; }
+
+.st14 {
+  display: inline;
+  fill: none;
+  stroke: #EED2E5;
+  stroke-width: 1.185; }
+
+.st15 {
+  display: inline;
+  fill: none;
+  stroke: #FAF3F8;
+  stroke-width: 1.185; }
+
+.st16 {
+  display: inline;
+  fill: none;
+  stroke: #FEF8FB;
+  stroke-width: 1.185; }
+
+.st17 {
+  display: inline;
+  fill: none;
+  stroke: #FDF9FC;
+  stroke-width: 1.185; }
+
+.st18 {
+  display: inline;
+  fill: none;
+  stroke: #FAF2F8;
+  stroke-width: 1.185; }
+
+.st19 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFD;
+  stroke-width: 1.185; }
+
+.st20 {
+  display: inline;
+  fill: none;
+  stroke: #FAEFF6;
+  stroke-width: 1.185; }
+
+.st21 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4F9;
+  stroke-width: 1.185; }
+
+.st22 {
+  display: inline;
+  fill: none;
+  stroke: #FBF7FB;
+  stroke-width: 1.185; }
+
+.st23 {
+  display: inline;
+  fill: none;
+  stroke: #DDA4CA;
+  stroke-width: 1.185; }
+
+.st24 {
+  display: inline;
+  fill: none;
+  stroke: #E1B0D2;
+  stroke-width: 1.185; }
+
+.st25 {
+  display: inline;
+  fill: none;
+  stroke: #DAA4CB;
+  stroke-width: 1.185; }
+
+.st26 {
+  display: inline;
+  fill: none;
+  stroke: #DBAACE;
+  stroke-width: 1.185; }
+
+.st27 {
+  display: inline;
+  fill: none;
+  stroke: #DFB1D2;
+  stroke-width: 1.185; }
+
+.st28 {
+  display: inline;
+  fill: none;
+  stroke: #DDA1C9;
+  stroke-width: 1.185; }
+
+.st29 {
+  display: inline;
+  fill: none;
+  stroke: #D895C2;
+  stroke-width: 1.185; }
+
+.st30 {
+  display: inline;
+  fill: none;
+  stroke: #DA9AC4;
+  stroke-width: 1.185; }
+
+.st31 {
+  display: inline;
+  fill: none;
+  stroke: #D9A0C8;
+  stroke-width: 1.185; }
+
+.st32 {
+  display: inline;
+  fill: none;
+  stroke: #DA90BE;
+  stroke-width: 1.185; }
+
+.st33 {
+  display: inline;
+  fill: none;
+  stroke: #DC99C4;
+  stroke-width: 1.185; }
+
+.st34 {
+  display: inline;
+  fill: none;
+  stroke: #F0D4E6;
+  stroke-width: 1.185; }
+
+.st35 {
+  display: inline;
+  fill: none;
+  stroke: #E2AFD1;
+  stroke-width: 1.185; }
+
+.st36 {
+  display: inline;
+  fill: none;
+  stroke: #E39EC6;
+  stroke-width: 1.185; }
+
+.st37 {
+  display: inline;
+  fill: none;
+  stroke: #DD95C1;
+  stroke-width: 1.185; }
+
+.st38 {
+  display: inline;
+  fill: none;
+  stroke: #DB99C4;
+  stroke-width: 1.185; }
+
+.st39 {
+  display: inline;
+  fill: none;
+  stroke: #E38CBB;
+  stroke-width: 1.185; }
+
+.st40 {
+  display: inline;
+  fill: none;
+  stroke: #E694BF;
+  stroke-width: 1.185; }
+
+.st41 {
+  display: inline;
+  fill: none;
+  stroke: #DB7FB4;
+  stroke-width: 1.185; }
+
+.st42 {
+  display: inline;
+  fill: none;
+  stroke: #E882AF;
+  stroke-width: 1.185; }
+
+.st43 {
+  display: inline;
+  fill: none;
+  stroke: #DF79B0;
+  stroke-width: 1.185; }
+
+.st44 {
+  display: inline;
+  fill: none;
+  stroke: #E16CA3;
+  stroke-width: 1.185; }
+
+.st45 {
+  display: inline;
+  fill: none;
+  stroke: #E4A5CA;
+  stroke-width: 1.185; }
+
+.st46 {
+  display: inline;
+  fill: none;
+  stroke: #E9B9D6;
+  stroke-width: 1.185; }
+
+.st47 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFD;
+  stroke-width: 1.185; }
+
+.st48 {
+  display: inline;
+  fill: none;
+  stroke: #FAF0F7;
+  stroke-width: 1.185; }
+
+.st49 {
+  display: inline;
+  fill: none;
+  stroke: #FCF3F8;
+  stroke-width: 1.185; }
+
+.st50 {
+  display: inline;
+  fill: none;
+  stroke: #EC96C0;
+  stroke-width: 1.185; }
+
+.st51 {
+  display: inline;
+  fill: none;
+  stroke: #EE9AC1;
+  stroke-width: 1.185; }
+
+.st52 {
+  display: inline;
+  fill: none;
+  stroke: #EA87AB;
+  stroke-width: 1.185; }
+
+.st53 {
+  display: inline;
+  fill: none;
+  stroke: #F0A3C1;
+  stroke-width: 1.185; }
+
+.st54 {
+  display: inline;
+  fill: none;
+  stroke: #F29FB0;
+  stroke-width: 1.185; }
+
+.st55 {
+  display: inline;
+  fill: none;
+  stroke: #F1ACC5;
+  stroke-width: 1.185; }
+
+.st56 {
+  display: inline;
+  fill: none;
+  stroke: #F09BAC;
+  stroke-width: 1.185; }
+
+.st57 {
+  display: inline;
+  fill: none;
+  stroke: #EE8FAD;
+  stroke-width: 1.185; }
+
+.st58 {
+  display: inline;
+  fill: none;
+  stroke: #F2A3B0;
+  stroke-width: 1.185; }
+
+.st59 {
+  display: inline;
+  fill: none;
+  stroke: #F9CACF;
+  stroke-width: 1.185; }
+
+.st60 {
+  display: inline;
+  fill: none;
+  stroke: #F7B4B5;
+  stroke-width: 1.185; }
+
+.st61 {
+  display: inline;
+  fill: none;
+  stroke: #EDC4DC;
+  stroke-width: 1.185; }
+
+.st62 {
+  display: inline;
+  fill: none;
+  stroke: #F7E9F3;
+  stroke-width: 1.185; }
+
+.st63 {
+  display: inline;
+  fill: none;
+  stroke: #F5E1EE;
+  stroke-width: 1.185; }
+
+.st64 {
+  display: inline;
+  fill: none;
+  stroke: #F0CFE3;
+  stroke-width: 1.185; }
+
+.st65 {
+  display: inline;
+  fill: none;
+  stroke: #E079B0;
+  stroke-width: 1.185; }
+
+.st66 {
+  display: inline;
+  fill: none;
+  stroke: #E06CA2;
+  stroke-width: 1.185; }
+
+.st67 {
+  display: inline;
+  fill: none;
+  stroke: #E399C3;
+  stroke-width: 1.185; }
+
+.st68 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAFC;
+  stroke-width: 1.185; }
+
+.st69 {
+  display: inline;
+  fill: none;
+  stroke: #FBCDC6;
+  stroke-width: 1.185; }
+
+.st70 {
+  display: inline;
+  fill: none;
+  stroke: #F8B8B5;
+  stroke-width: 1.185; }
+
+.st71 {
+  display: inline;
+  fill: none;
+  stroke: #F3A8A8;
+  stroke-width: 1.185; }
+
+.st72 {
+  display: inline;
+  fill: none;
+  stroke: #FBC4B1;
+  stroke-width: 1.185; }
+
+.st73 {
+  display: inline;
+  fill: none;
+  stroke: #FCC5A5;
+  stroke-width: 1.185; }
+
+.st74 {
+  display: inline;
+  fill: none;
+  stroke: #E181AE;
+  stroke-width: 1.185; }
+
+.st75 {
+  display: inline;
+  fill: none;
+  stroke: #DF6A9A;
+  stroke-width: 1.185; }
+
+.st76 {
+  display: inline;
+  fill: none;
+  stroke: #E3678C;
+  stroke-width: 1.185; }
+
+.st77 {
+  display: inline;
+  fill: none;
+  stroke: #EBB6CF;
+  stroke-width: 1.185; }
+
+.st78 {
+  display: inline;
+  fill: none;
+  stroke: #E5A0C2;
+  stroke-width: 1.185; }
+
+.st79 {
+  display: inline;
+  fill: none;
+  stroke: #F5E3EF;
+  stroke-width: 1.185; }
+
+.st80 {
+  display: inline;
+  fill: none;
+  stroke: #FBF6FA;
+  stroke-width: 1.185; }
+
+.st81 {
+  display: inline;
+  fill: none;
+  stroke: #E97086;
+  stroke-width: 1.185; }
+
+.st82 {
+  display: inline;
+  fill: none;
+  stroke: #F29B94;
+  stroke-width: 1.185; }
+
+.st83 {
+  display: inline;
+  fill: none;
+  stroke: #ED787A;
+  stroke-width: 1.185; }
+
+.st84 {
+  display: inline;
+  fill: none;
+  stroke: #F29398;
+  stroke-width: 1.185; }
+
+.st85 {
+  display: inline;
+  fill: none;
+  stroke: #F7AA8D;
+  stroke-width: 1.185; }
+
+.st86 {
+  display: inline;
+  fill: none;
+  stroke: #F7B9AA;
+  stroke-width: 1.185; }
+
+.st87 {
+  display: inline;
+  fill: none;
+  stroke: #EBB7CC;
+  stroke-width: 1.185; }
+
+.st88 {
+  display: inline;
+  fill: none;
+  stroke: #DF799F;
+  stroke-width: 1.185; }
+
+.st89 {
+  display: inline;
+  fill: none;
+  stroke: #E289AB;
+  stroke-width: 1.185; }
+
+.st90 {
+  display: inline;
+  fill: none;
+  stroke: #E0658B;
+  stroke-width: 1.185; }
+
+.st91 {
+  display: inline;
+  fill: none;
+  stroke: #E0698C;
+  stroke-width: 1.185; }
+
+.st92 {
+  display: inline;
+  fill: none;
+  stroke: #F5E2EC;
+  stroke-width: 1.185; }
+
+.st93 {
+  display: inline;
+  fill: none;
+  stroke: #F2D5E1;
+  stroke-width: 1.185; }
+
+.st94 {
+  display: inline;
+  fill: none;
+  stroke: #F7E6ED;
+  stroke-width: 1.185; }
+
+.st95 {
+  display: inline;
+  fill: none;
+  stroke: #FAEEF2;
+  stroke-width: 1.185; }
+
+.st96 {
+  display: inline;
+  fill: none;
+  stroke: #F3D8E2;
+  stroke-width: 1.185; }
+
+.st97 {
+  display: inline;
+  fill: none;
+  stroke: #F7E9F0;
+  stroke-width: 1.185; }
+
+.st98 {
+  display: inline;
+  fill: none;
+  stroke: #EDBDCC;
+  stroke-width: 1.185; }
+
+.st99 {
+  display: inline;
+  fill: none;
+  stroke: #F2C6D5;
+  stroke-width: 1.185; }
+
+.st100 {
+  display: inline;
+  fill: none;
+  stroke: #F0C0CD;
+  stroke-width: 1.185; }
+
+.st101 {
+  display: inline;
+  fill: none;
+  stroke: #EFC0CE;
+  stroke-width: 1.185; }
+
+.st102 {
+  display: inline;
+  fill: none;
+  stroke: #E26D86;
+  stroke-width: 1.185; }
+
+.st103 {
+  display: inline;
+  fill: none;
+  stroke: #DF729A;
+  stroke-width: 1.185; }
+
+.st104 {
+  display: inline;
+  fill: none;
+  stroke: #E5879F;
+  stroke-width: 1.185; }
+
+.st105 {
+  display: inline;
+  fill: none;
+  stroke: #E66A76;
+  stroke-width: 1.185; }
+
+.st106 {
+  display: inline;
+  fill: none;
+  stroke: #E56E7F;
+  stroke-width: 1.185; }
+
+.st107 {
+  display: inline;
+  fill: none;
+  stroke: #E9686E;
+  stroke-width: 1.185; }
+
+.st108 {
+  display: inline;
+  fill: none;
+  stroke: #E7686F;
+  stroke-width: 1.185; }
+
+.st109 {
+  display: inline;
+  fill: none;
+  stroke: #E96C72;
+  stroke-width: 1.185; }
+
+.st110 {
+  display: inline;
+  fill: none;
+  stroke: #ED7268;
+  stroke-width: 1.185; }
+
+.st111 {
+  display: inline;
+  fill: none;
+  stroke: #F08278;
+  stroke-width: 1.185; }
+
+.st112 {
+  display: inline;
+  fill: none;
+  stroke: #EE7964;
+  stroke-width: 1.185; }
+
+.st113 {
+  display: inline;
+  fill: none;
+  stroke: #F28660;
+  stroke-width: 1.185; }
+
+.st114 {
+  display: inline;
+  fill: none;
+  stroke: #F69075;
+  stroke-width: 1.185; }
+
+.st115 {
+  display: inline;
+  fill: none;
+  stroke: #F28564;
+  stroke-width: 1.185; }
+
+.st116 {
+  display: inline;
+  fill: none;
+  stroke: #F6936B;
+  stroke-width: 1.185; }
+
+.st117 {
+  display: inline;
+  fill: none;
+  stroke: #FAAF76;
+  stroke-width: 1.185; }
+
+.st118 {
+  display: inline;
+  fill: none;
+  stroke: #F9A355;
+  stroke-width: 1.185; }
+
+.st119 {
+  display: inline;
+  fill: none;
+  stroke: #FBB576;
+  stroke-width: 1.185; }
+
+.st120 {
+  display: inline;
+  fill: none;
+  stroke: #F6DAE2;
+  stroke-width: 1.185; }
+
+.st121 {
+  display: inline;
+  fill: none;
+  stroke: #FAF1F4;
+  stroke-width: 1.185; }
+
+.st122 {
+  display: inline;
+  fill: none;
+  stroke: #FCEFF3;
+  stroke-width: 1.185; }
+
+.st123 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7FA;
+  stroke-width: 1.185; }
+
+.st124 {
+  display: inline;
+  fill: none;
+  stroke: #EB96A7;
+  stroke-width: 1.185; }
+
+.st125 {
+  display: inline;
+  fill: none;
+  stroke: #EFB1BD;
+  stroke-width: 1.185; }
+
+.st126 {
+  display: inline;
+  fill: none;
+  stroke: #EEB4C1;
+  stroke-width: 1.185; }
+
+.st127 {
+  display: inline;
+  fill: none;
+  stroke: #E9858D;
+  stroke-width: 1.185; }
+
+.st128 {
+  display: inline;
+  fill: none;
+  stroke: #EF8170;
+  stroke-width: 1.185; }
+
+.st129 {
+  display: inline;
+  fill: none;
+  stroke: #EA6E6D;
+  stroke-width: 1.185; }
+
+.st130 {
+  display: inline;
+  fill: none;
+  stroke: #EA6E70;
+  stroke-width: 1.185; }
+
+.st131 {
+  display: inline;
+  fill: none;
+  stroke: #EF948F;
+  stroke-width: 1.185; }
+
+.st132 {
+  display: inline;
+  fill: none;
+  stroke: #EC817A;
+  stroke-width: 1.185; }
+
+.st133 {
+  display: inline;
+  fill: none;
+  stroke: #EB8386;
+  stroke-width: 1.185; }
+
+.st134 {
+  display: inline;
+  fill: none;
+  stroke: #F49472;
+  stroke-width: 1.185; }
+
+.st135 {
+  display: inline;
+  fill: none;
+  stroke: #F6905F;
+  stroke-width: 1.185; }
+
+.st136 {
+  display: inline;
+  fill: none;
+  stroke: #F9A062;
+  stroke-width: 1.185; }
+
+.st137 {
+  display: inline;
+  fill: none;
+  stroke: #F89C56;
+  stroke-width: 1.185; }
+
+.st138 {
+  display: inline;
+  fill: none;
+  stroke: #F39F8C;
+  stroke-width: 1.185; }
+
+.st139 {
+  display: inline;
+  fill: none;
+  stroke: #F29A8A;
+  stroke-width: 1.185; }
+
+.st140 {
+  display: inline;
+  fill: none;
+  stroke: #F7A383;
+  stroke-width: 1.185; }
+
+.st141 {
+  display: inline;
+  fill: none;
+  stroke: #F1B3BC;
+  stroke-width: 1.185; }
+
+.st142 {
+  display: inline;
+  fill: none;
+  stroke: #F0B0B8;
+  stroke-width: 1.185; }
+
+.st143 {
+  display: inline;
+  fill: none;
+  stroke: #EFA3A9;
+  stroke-width: 1.185; }
+
+.st144 {
+  display: inline;
+  fill: none;
+  stroke: #F1A4A8;
+  stroke-width: 1.185; }
+
+.st145 {
+  display: inline;
+  fill: none;
+  stroke: #F7B189;
+  stroke-width: 1.185; }
+
+.st146 {
+  display: inline;
+  fill: none;
+  stroke: #F8E5E9;
+  stroke-width: 1.185; }
+
+.st147 {
+  display: inline;
+  fill: none;
+  stroke: #F8E1E5;
+  stroke-width: 1.185; }
+
+.st148 {
+  display: inline;
+  fill: none;
+  stroke: #F7DDE2;
+  stroke-width: 1.185; }
+
+.st149 {
+  display: inline;
+  fill: none;
+  stroke: #F4CACF;
+  stroke-width: 1.185; }
+
+.st150 {
+  display: inline;
+  fill: none;
+  stroke: #F6D6DA;
+  stroke-width: 1.185; }
+
+.st151 {
+  display: inline;
+  fill: none;
+  stroke: #F5D1D6;
+  stroke-width: 1.185; }
+
+.st152 {
+  display: inline;
+  fill: none;
+  stroke: #F2BABC;
+  stroke-width: 1.185; }
+
+.st153 {
+  display: inline;
+  fill: none;
+  stroke: #F6C0BD;
+  stroke-width: 1.185; }
+
+.st154 {
+  display: inline;
+  fill: none;
+  stroke: #F3B9B4;
+  stroke-width: 1.185; }
+
+.st155 {
+  display: inline;
+  fill: none;
+  stroke: #F4B9B8;
+  stroke-width: 1.185; }
+
+.st156 {
+  display: inline;
+  fill: none;
+  stroke: #F6C0AF;
+  stroke-width: 1.185; }
+
+.st157 {
+  display: inline;
+  fill: none;
+  stroke: #F6C4BC;
+  stroke-width: 1.185; }
+
+.st158 {
+  display: inline;
+  fill: none;
+  stroke: #F9D0BE;
+  stroke-width: 1.185; }
+
+.st159 {
+  display: inline;
+  fill: none;
+  stroke: #F8DDDE;
+  stroke-width: 1.185; }
+
+.st160 {
+  display: inline;
+  fill: none;
+  stroke: #F6D2D2;
+  stroke-width: 1.185; }
+
+.st161 {
+  display: inline;
+  fill: none;
+  stroke: #F7D0D2;
+  stroke-width: 1.185; }
+
+.st162 {
+  display: inline;
+  fill: none;
+  stroke: #FBF6F7;
+  stroke-width: 1.185; }
+
+.st163 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7F9;
+  stroke-width: 1.185; }
+
+.st164 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4F7;
+  stroke-width: 1.185; }
+
+.st165 {
+  display: inline;
+  fill: none;
+  stroke: #FCF3F7;
+  stroke-width: 1.185; }
+
+.st166 {
+  display: inline;
+  fill: none;
+  stroke: #FCEAED;
+  stroke-width: 1.185; }
+
+.st167 {
+  display: inline;
+  fill: none;
+  stroke: #FAE4E0;
+  stroke-width: 1.185; }
+
+.st168 {
+  display: inline;
+  fill: none;
+  stroke: #FBE2E0;
+  stroke-width: 1.185; }
+
+.st169 {
+  display: inline;
+  fill: none;
+  stroke: #F7CDCA;
+  stroke-width: 1.185; }
+
+.st170 {
+  display: inline;
+  fill: none;
+  stroke: #F9DCD6;
+  stroke-width: 1.185; }
+
+.st171 {
+  display: inline;
+  fill: none;
+  stroke: #FCEAEB;
+  stroke-width: 1.185; }
+
+.st172 {
+  display: inline;
+  fill: none;
+  stroke: #FCECEC;
+  stroke-width: 1.185; }
+
+.st173 {
+  display: inline;
+  fill: none;
+  stroke: #FFF6F4;
+  stroke-width: 1.185; }
+
+.st174 {
+  display: inline;
+  fill: none;
+  stroke: #FEF2EF;
+  stroke-width: 1.185; }
+
+.st175 {
+  display: inline;
+  fill: none;
+  stroke: #FEF3F2;
+  stroke-width: 1.185; }
+
+.st176 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7F7;
+  stroke-width: 1.185; }
+
+.st177 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F7;
+  stroke-width: 1.185; }
+
+.st178 {
+  display: inline;
+  fill: none;
+  stroke: #FDECE3;
+  stroke-width: 1.185; }
+
+.st179 {
+  display: inline;
+  fill: none;
+  stroke: #FEEFEB;
+  stroke-width: 1.185; }
+
+.st180 {
+  display: inline;
+  fill: none;
+  stroke: #FBCDA9;
+  stroke-width: 1.185; }
+
+.st181 {
+  display: inline;
+  fill: none;
+  stroke: #FCDDCA;
+  stroke-width: 1.185; }
+
+.st182 {
+  display: inline;
+  fill: none;
+  stroke: #F89A5D;
+  stroke-width: 1.185; }
+
+.st183 {
+  display: inline;
+  fill: none;
+  stroke: #F9A365;
+  stroke-width: 1.185; }
+
+.st184 {
+  display: inline;
+  fill: none;
+  stroke: #FAAC72;
+  stroke-width: 1.185; }
+
+.st185 {
+  display: inline;
+  fill: none;
+  stroke: #F9A45A;
+  stroke-width: 1.185; }
+
+.st186 {
+  display: inline;
+  fill: none;
+  stroke: #FAA95F;
+  stroke-width: 1.185; }
+
+.st187 {
+  display: inline;
+  fill: none;
+  stroke: #FAA652;
+  stroke-width: 1.185; }
+
+.st188 {
+  display: inline;
+  fill: none;
+  stroke: #FAAB51;
+  stroke-width: 1.185; }
+
+.st189 {
+  display: inline;
+  fill: none;
+  stroke: #FBB154;
+  stroke-width: 1.185; }
+
+.st190 {
+  display: inline;
+  fill: none;
+  stroke: #FBB064;
+  stroke-width: 1.185; }
+
+.st191 {
+  display: inline;
+  fill: none;
+  stroke: #FBBF82;
+  stroke-width: 1.185; }
+
+.st192 {
+  display: inline;
+  fill: none;
+  stroke: #FCB965;
+  stroke-width: 1.185; }
+
+.st193 {
+  display: inline;
+  fill: none;
+  stroke: #FCBE89;
+  stroke-width: 1.185; }
+
+.st194 {
+  display: inline;
+  fill: none;
+  stroke: #FEC573;
+  stroke-width: 1.185; }
+
+.st195 {
+  display: inline;
+  fill: none;
+  stroke: #FDBD5E;
+  stroke-width: 1.185; }
+
+.st196 {
+  display: inline;
+  fill: none;
+  stroke: #FBD1A3;
+  stroke-width: 1.185; }
+
+.st197 {
+  display: inline;
+  fill: none;
+  stroke: #FCD0A4;
+  stroke-width: 1.185; }
+
+.st198 {
+  display: inline;
+  fill: none;
+  stroke: #FCD1A9;
+  stroke-width: 1.185; }
+
+.st199 {
+  display: inline;
+  fill: none;
+  stroke: #FED8AC;
+  stroke-width: 1.185; }
+
+.st200 {
+  display: inline;
+  fill: none;
+  stroke: #FECB8D;
+  stroke-width: 1.185; }
+
+.st201 {
+  display: inline;
+  fill: none;
+  stroke: #FDE6D1;
+  stroke-width: 1.185; }
+
+.st202 {
+  display: inline;
+  fill: none;
+  stroke: #FEDDBB;
+  stroke-width: 1.185; }
+
+.st203 {
+  display: inline;
+  fill: none;
+  stroke: #FDE4CD;
+  stroke-width: 1.185; }
+
+.st204 {
+  display: inline;
+  fill: none;
+  stroke: #FFF9F7;
+  stroke-width: 1.185; }
+
+.st205 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFE6;
+  stroke-width: 1.185; }
+
+.st206 {
+  display: inline;
+  fill: none;
+  stroke: #FED39D;
+  stroke-width: 1.185; }
+
+.st207 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE86;
+  stroke-width: 1.185; }
+
+.st208 {
+  display: inline;
+  fill: none;
+  stroke: #FECA80;
+  stroke-width: 1.185; }
+
+.st209 {
+  display: inline;
+  fill: none;
+  stroke: #FECB86;
+  stroke-width: 1.185; }
+
+.st210 {
+  display: inline;
+  fill: none;
+  stroke: #FECB79;
+  stroke-width: 1.185; }
+
+.st211 {
+  display: inline;
+  fill: none;
+  stroke: #FFD892;
+  stroke-width: 1.185; }
+
+.st212 {
+  display: inline;
+  fill: none;
+  stroke: #FFD69F;
+  stroke-width: 1.185; }
+
+.st213 {
+  display: inline;
+  fill: none;
+  stroke: #FEDEB0;
+  stroke-width: 1.185; }
+
+.st214 {
+  display: inline;
+  fill: none;
+  stroke: #FFD698;
+  stroke-width: 1.185; }
+
+.st215 {
+  display: inline;
+  fill: none;
+  stroke: #FFD28E;
+  stroke-width: 1.185; }
+
+.st216 {
+  display: inline;
+  fill: none;
+  stroke: #FFE1AC;
+  stroke-width: 1.185; }
+
+.st217 {
+  display: inline;
+  fill: none;
+  stroke: #FFDA9C;
+  stroke-width: 1.185; }
+
+.st218 {
+  display: inline;
+  fill: none;
+  stroke: #FFE9C4;
+  stroke-width: 1.185; }
+
+.st219 {
+  display: inline;
+  fill: none;
+  stroke: #FFECCF;
+  stroke-width: 1.185; }
+
+.st220 {
+  display: inline;
+  fill: none;
+  stroke: #FFE6C3;
+  stroke-width: 1.185; }
+
+.st221 {
+  display: inline;
+  fill: none;
+  stroke: #FDDFB9;
+  stroke-width: 1.185; }
+
+.st222 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFA;
+  stroke-width: 1.185; }
+
+.st223 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4EC;
+  stroke-width: 1.185; }
+
+.st224 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBF7;
+  stroke-width: 1.185; }
+
+.st225 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFE0;
+  stroke-width: 1.185; }
+
+.st226 {
+  display: inline;
+  fill: none;
+  stroke: #FDE9D1;
+  stroke-width: 1.185; }
+
+.st227 {
+  display: inline;
+  fill: none;
+  stroke: #FDE5C9;
+  stroke-width: 1.185; }
+
+.st228 {
+  display: inline;
+  fill: none;
+  stroke: #FFEAD0;
+  stroke-width: 1.185; }
+
+.st229 {
+  display: inline;
+  fill: none;
+  stroke: #FFEED7;
+  stroke-width: 1.185; }
+
+.st230 {
+  display: inline;
+  fill: none;
+  stroke: #FFE9CD;
+  stroke-width: 1.185; }
+
+.st231 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFDB;
+  stroke-width: 1.185; }
+
+.st232 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4E8;
+  stroke-width: 1.185; }
+
+.st233 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3E6;
+  stroke-width: 1.185; }
+
+.st234 {
+  display: inline;
+  fill: none;
+  stroke: #FFF6EE;
+  stroke-width: 1.185; }
+
+.st235 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2E1;
+  stroke-width: 1.185; }
+
+.st236 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7F0;
+  stroke-width: 1.185; }
+
+.st237 {
+  display: inline;
+  fill: none;
+  stroke: #FFF9F6;
+  stroke-width: 1.185; }
+
+.st238 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFC;
+  stroke-width: 1.185; }
+
+.st239 {
+  display: inline;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 1.185; }
+
+.st240 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F3;
+  stroke-width: 1.185; }
+
+.st241 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7ED;
+  stroke-width: 1.185; }
+
+.st242 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F2;
+  stroke-width: 1.185; }
+
+.st243 {
+  display: inline;
+  fill: none;
+  stroke: #FFD065;
+  stroke-width: 1.185; }
+
+.st244 {
+  display: inline;
+  fill: none;
+  stroke: #FFD782;
+  stroke-width: 1.185; }
+
+.st245 {
+  display: inline;
+  fill: none;
+  stroke: #FFD57C;
+  stroke-width: 1.185; }
+
+.st246 {
+  display: inline;
+  fill: none;
+  stroke: #FFE7BC;
+  stroke-width: 1.185; }
+
+.st247 {
+  display: inline;
+  fill: none;
+  stroke: #FFE6B4;
+  stroke-width: 1.185; }
+
+.st248 {
+  display: inline;
+  fill: none;
+  stroke: #FEDF95;
+  stroke-width: 1.185; }
+
+.st249 {
+  display: inline;
+  fill: none;
+  stroke: #FED87A;
+  stroke-width: 1.185; }
+
+.st250 {
+  display: inline;
+  fill: none;
+  stroke: #FED572;
+  stroke-width: 1.185; }
+
+.st251 {
+  display: inline;
+  fill: none;
+  stroke: #FAE4A1;
+  stroke-width: 1.185; }
+
+.st252 {
+  display: inline;
+  fill: none;
+  stroke: #FAEAB1;
+  stroke-width: 1.185; }
+
+.st253 {
+  display: inline;
+  fill: none;
+  stroke: #FBE4A0;
+  stroke-width: 1.185; }
+
+.st254 {
+  display: inline;
+  fill: none;
+  stroke: #F9DF83;
+  stroke-width: 1.185; }
+
+.st255 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0D8;
+  stroke-width: 1.185; }
+
+.st256 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4E3;
+  stroke-width: 1.185; }
+
+.st257 {
+  display: inline;
+  fill: none;
+  stroke: #FFEECE;
+  stroke-width: 1.185; }
+
+.st258 {
+  display: inline;
+  fill: none;
+  stroke: #FFECC7;
+  stroke-width: 1.185; }
+
+.st259 {
+  display: inline;
+  fill: none;
+  stroke: #FEEBC8;
+  stroke-width: 1.185; }
+
+.st260 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2D8;
+  stroke-width: 1.185; }
+
+.st261 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7EA;
+  stroke-width: 1.185; }
+
+.st262 {
+  display: inline;
+  fill: none;
+  stroke: #FFEBC1;
+  stroke-width: 1.185; }
+
+.st263 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2D3;
+  stroke-width: 1.185; }
+
+.st264 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0CE;
+  stroke-width: 1.185; }
+
+.st265 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFCB;
+  stroke-width: 1.185; }
+
+.st266 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF2;
+  stroke-width: 1.185; }
+
+.st267 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8EF;
+  stroke-width: 1.185; }
+
+.st268 {
+  display: inline;
+  fill: none;
+  stroke: #FEF4DE;
+  stroke-width: 1.185; }
+
+.st269 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF6;
+  stroke-width: 1.185; }
+
+.st270 {
+  display: inline;
+  fill: none;
+  stroke: #E3E79C;
+  stroke-width: 1.185; }
+
+.st271 {
+  display: inline;
+  fill: none;
+  stroke: #EEEAA7;
+  stroke-width: 1.185; }
+
+.st272 {
+  display: inline;
+  fill: none;
+  stroke: #FBEEC0;
+  stroke-width: 1.185; }
+
+.st273 {
+  display: inline;
+  fill: none;
+  stroke: #FAEEC0;
+  stroke-width: 1.185; }
+
+.st274 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3D3;
+  stroke-width: 1.185; }
+
+.st275 {
+  display: inline;
+  fill: none;
+  stroke: #FEF6E4;
+  stroke-width: 1.185; }
+
+.st276 {
+  display: inline;
+  fill: none;
+  stroke: #FDF5E0;
+  stroke-width: 1.185; }
+
+.st277 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF0;
+  stroke-width: 1.185; }
+
+.st278 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF5;
+  stroke-width: 1.185; }
+
+.st279 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCF8;
+  stroke-width: 1.185; }
+
+.st280 {
+  display: inline;
+  fill: none;
+  stroke: #DBE593;
+  stroke-width: 1.185; }
+
+.st281 {
+  display: inline;
+  fill: none;
+  stroke: #EDECB7;
+  stroke-width: 1.185; }
+
+.st282 {
+  display: inline;
+  fill: none;
+  stroke: #F9F3D5;
+  stroke-width: 1.185; }
+
+.st283 {
+  display: inline;
+  fill: none;
+  stroke: #F8F4D6;
+  stroke-width: 1.185; }
+
+.st284 {
+  display: inline;
+  fill: none;
+  stroke: #FBF6E5;
+  stroke-width: 1.185; }
+
+.st285 {
+  display: inline;
+  fill: none;
+  stroke: #FEF8EB;
+  stroke-width: 1.185; }
+
+.st286 {
+  display: inline;
+  fill: none;
+  stroke: #FFF9EE;
+  stroke-width: 1.185; }
+
+.st287 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBF3;
+  stroke-width: 1.185; }
+
+.st288 {
+  display: inline;
+  fill: none;
+  stroke: #CDE3A4;
+  stroke-width: 1.185; }
+
+.st289 {
+  display: inline;
+  fill: none;
+  stroke: #D0E398;
+  stroke-width: 1.185; }
+
+.st290 {
+  display: inline;
+  fill: none;
+  stroke: #EAF2D3;
+  stroke-width: 1.185; }
+
+.st291 {
+  display: inline;
+  fill: none;
+  stroke: #EEF2CF;
+  stroke-width: 1.185; }
+
+.st292 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBEF;
+  stroke-width: 1.185; }
+
+.st293 {
+  display: inline;
+  fill: none;
+  stroke: #FBF8EB;
+  stroke-width: 1.185; }
+
+.st294 {
+  display: inline;
+  fill: none;
+  stroke: #F8F6E1;
+  stroke-width: 1.185; }
+
+.st295 {
+  display: inline;
+  fill: none;
+  stroke: #F0F6E2;
+  stroke-width: 1.185; }
+
+.st296 {
+  display: inline;
+  fill: none;
+  stroke: #DEEDCD;
+  stroke-width: 1.185; }
+
+.st297 {
+  display: inline;
+  fill: none;
+  stroke: #BFDFAE;
+  stroke-width: 1.185; }
+
+.st298 {
+  display: inline;
+  fill: none;
+  stroke: #DFEDC8;
+  stroke-width: 1.185; }
+
+.st299 {
+  display: inline;
+  fill: none;
+  stroke: #FCFCF7;
+  stroke-width: 1.185; }
+
+.st300 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDFB;
+  stroke-width: 1.185; }
+
+.st301 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDFD;
+  stroke-width: 1.185; }
+
+.st302 {
+  display: inline;
+  fill: none;
+  stroke: #EEF6E7;
+  stroke-width: 1.185; }
+
+.st303 {
+  display: inline;
+  fill: none;
+  stroke: #D3E9C7;
+  stroke-width: 1.185; }
+
+.st304 {
+  display: inline;
+  fill: none;
+  stroke: #DDEED8;
+  stroke-width: 1.185; }
+
+.st305 {
+  display: inline;
+  fill: none;
+  stroke: #BADEB5;
+  stroke-width: 1.185; }
+
+.st306 {
+  display: inline;
+  fill: none;
+  stroke: #A2D5AC;
+  stroke-width: 1.185; }
+
+.st307 {
+  display: inline;
+  fill: none;
+  stroke: #BDE1C8;
+  stroke-width: 1.185; }
+
+.st308 {
+  display: inline;
+  fill: none;
+  stroke: #FFFFFD;
+  stroke-width: 1.185; }
+
+.st309 {
+  display: inline;
+  fill: none;
+  stroke: #FCFDFB;
+  stroke-width: 1.185; }
+
+.st310 {
+  display: inline;
+  fill: none;
+  stroke: #F7FBF3;
+  stroke-width: 1.185; }
+
+.st311 {
+  display: inline;
+  fill: none;
+  stroke: #EFF7EB;
+  stroke-width: 1.185; }
+
+.st312 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBF7;
+  stroke-width: 1.185; }
+
+.st313 {
+  display: inline;
+  fill: none;
+  stroke: #F3F8EE;
+  stroke-width: 1.185; }
+
+.st314 {
+  display: inline;
+  fill: none;
+  stroke: #F0F7EF;
+  stroke-width: 1.185; }
+
+.st315 {
+  display: inline;
+  fill: none;
+  stroke: #D6ECDC;
+  stroke-width: 1.185; }
+
+.st316 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFA;
+  stroke-width: 1.185; }
+
+.st317 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFF;
+  stroke-width: 1.185; }
+
+.st318 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFD;
+  stroke-width: 1.185; }
+
+.st319 {
+  display: inline;
+  fill: none;
+  stroke: #8ECFAF;
+  stroke-width: 1.185; }
+
+.st320 {
+  display: inline;
+  fill: none;
+  stroke: #8BCEAA;
+  stroke-width: 1.185; }
+
+.st321 {
+  display: inline;
+  fill: none;
+  stroke: #92CFAA;
+  stroke-width: 1.185; }
+
+.st322 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFC;
+  stroke-width: 1.185; }
+
+.st323 {
+  display: inline;
+  fill: none;
+  stroke: #F8FCFA;
+  stroke-width: 1.185; }
+
+.st324 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBF8;
+  stroke-width: 1.185; }
+
+.st325 {
+  display: inline;
+  fill: none;
+  stroke: #FBFEFF;
+  stroke-width: 1.185; }
+
+.st326 {
+  display: inline;
+  fill: none;
+  stroke: #82CDBA;
+  stroke-width: 1.185; }
+
+.st327 {
+  display: inline;
+  fill: none;
+  stroke: #89CEB6;
+  stroke-width: 1.185; }
+
+.st328 {
+  display: inline;
+  fill: none;
+  stroke: #8AD0BE;
+  stroke-width: 1.185; }
+
+.st329 {
+  display: inline;
+  fill: none;
+  stroke: #8ECFAE;
+  stroke-width: 1.185; }
+
+.st330 {
+  display: inline;
+  fill: none;
+  stroke: #9FD5BA;
+  stroke-width: 1.185; }
+
+.st331 {
+  display: inline;
+  fill: none;
+  stroke: #94D1B3;
+  stroke-width: 1.185; }
+
+.st332 {
+  display: inline;
+  fill: none;
+  stroke: #9BD5BF;
+  stroke-width: 1.185; }
+
+.st333 {
+  display: inline;
+  fill: none;
+  stroke: #80CDC3;
+  stroke-width: 1.185; }
+
+.st334 {
+  display: inline;
+  fill: none;
+  stroke: #8BD1CB;
+  stroke-width: 1.185; }
+
+.st335 {
+  display: inline;
+  fill: none;
+  stroke: #87D1CF;
+  stroke-width: 1.185; }
+
+.st336 {
+  display: inline;
+  fill: none;
+  stroke: #ABDBCA;
+  stroke-width: 1.185; }
+
+.st337 {
+  display: inline;
+  fill: none;
+  stroke: #B8E0CC;
+  stroke-width: 1.185; }
+
+.st338 {
+  display: inline;
+  fill: none;
+  stroke: #D3EBE1;
+  stroke-width: 1.185; }
+
+.st339 {
+  display: inline;
+  fill: none;
+  stroke: #F6FBFA;
+  stroke-width: 1.185; }
+
+.st340 {
+  display: inline;
+  fill: none;
+  stroke: #ECF7F3;
+  stroke-width: 1.185; }
+
+.st341 {
+  display: inline;
+  fill: none;
+  stroke: #CDEAE6;
+  stroke-width: 1.185; }
+
+.st342 {
+  display: inline;
+  fill: none;
+  stroke: #CBE9E0;
+  stroke-width: 1.185; }
+
+.st343 {
+  display: inline;
+  fill: none;
+  stroke: #ACDDDB;
+  stroke-width: 1.185; }
+
+.st344 {
+  display: inline;
+  fill: none;
+  stroke: #EEF8F5;
+  stroke-width: 1.185; }
+
+.st345 {
+  display: inline;
+  fill: none;
+  stroke: #BDE4E6;
+  stroke-width: 1.185; }
+
+.st346 {
+  display: inline;
+  fill: none;
+  stroke: #DFF2F3;
+  stroke-width: 1.185; }
+
+.st347 {
+  display: inline;
+  fill: none;
+  stroke: #F0F9F9;
+  stroke-width: 1.185; }
+
+.st348 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFE;
+  stroke-width: 1.185; }
+
+.st349 {
+  display: inline;
+  fill: none;
+  stroke: #F6FBFB;
+  stroke-width: 1.185; }
+
+.st350 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFD;
+  stroke-width: 1.185; }
+
+.st351 {
+  display: inline;
+  fill: none;
+  stroke: #8BD2CF;
+  stroke-width: 1.185; }
+
+.st352 {
+  display: inline;
+  fill: none;
+  stroke: #80CFD4;
+  stroke-width: 1.185; }
+
+.st353 {
+  display: inline;
+  fill: none;
+  stroke: #7ECFD2;
+  stroke-width: 1.185; }
+
+.st354 {
+  display: inline;
+  fill: none;
+  stroke: #80CFCE;
+  stroke-width: 1.185; }
+
+.st355 {
+  display: inline;
+  fill: none;
+  stroke: #95D6DC;
+  stroke-width: 1.185; }
+
+.st356 {
+  display: inline;
+  fill: none;
+  stroke: #8FD4DC;
+  stroke-width: 1.185; }
+
+.st357 {
+  display: inline;
+  fill: none;
+  stroke: #D6EEF3;
+  stroke-width: 1.185; }
+
+.st358 {
+  display: inline;
+  fill: none;
+  stroke: #E7F5F9;
+  stroke-width: 1.185; }
+
+.st359 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFB;
+  stroke-width: 1.185; }
+
+.st360 {
+  display: inline;
+  fill: none;
+  stroke: #F0F9FB;
+  stroke-width: 1.185; }
+
+.st361 {
+  display: inline;
+  fill: none;
+  stroke: #BDE5EB;
+  stroke-width: 1.185; }
+
+.st362 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFF;
+  stroke-width: 1.185; }
+
+.st363 {
+  display: inline;
+  fill: none;
+  stroke: #EFF9FE;
+  stroke-width: 1.185; }
+
+.st364 {
+  display: inline;
+  fill: none;
+  stroke: #EEF8FC;
+  stroke-width: 1.185; }
+
+.st365 {
+  display: inline;
+  fill: none;
+  stroke: #FBFCFE;
+  stroke-width: 1.185; }
+
+.st366 {
+  display: inline;
+  fill: none;
+  stroke: #A6DDE7;
+  stroke-width: 1.185; }
+
+.st367 {
+  display: inline;
+  fill: none;
+  stroke: #94D6DF;
+  stroke-width: 1.185; }
+
+.st368 {
+  display: inline;
+  fill: none;
+  stroke: #80D0D8;
+  stroke-width: 1.185; }
+
+.st369 {
+  display: inline;
+  fill: none;
+  stroke: #7DCFDA;
+  stroke-width: 1.185; }
+
+.st370 {
+  display: inline;
+  fill: none;
+  stroke: #7FD0D9;
+  stroke-width: 1.185; }
+
+.st371 {
+  display: inline;
+  fill: none;
+  stroke: #94D7E3;
+  stroke-width: 1.185; }
+
+.st372 {
+  display: inline;
+  fill: none;
+  stroke: #80D1DC;
+  stroke-width: 1.185; }
+
+.st373 {
+  display: inline;
+  fill: none;
+  stroke: #C0E6F0;
+  stroke-width: 1.185; }
+
+.st374 {
+  display: inline;
+  fill: none;
+  stroke: #D6EEF4;
+  stroke-width: 1.185; }
+
+.st375 {
+  display: inline;
+  fill: none;
+  stroke: #B7E3ED;
+  stroke-width: 1.185; }
+
+.st376 {
+  display: inline;
+  fill: none;
+  stroke: #E7F5FA;
+  stroke-width: 1.185; }
+
+.st377 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFE;
+  stroke-width: 1.185; }
+
+.st378 {
+  display: inline;
+  fill: none;
+  stroke: #DAF1F8;
+  stroke-width: 1.185; }
+
+.st379 {
+  display: inline;
+  fill: none;
+  stroke: #CFECF3;
+  stroke-width: 1.185; }
+
+.st380 {
+  display: inline;
+  fill: none;
+  stroke: #B8E3ED;
+  stroke-width: 1.185; }
+
+.st381 {
+  display: inline;
+  fill: none;
+  stroke: #B6E3F0;
+  stroke-width: 1.185; }
+
+.st382 {
+  display: inline;
+  fill: none;
+  stroke: #CAEAF4;
+  stroke-width: 1.185; }
+
+.st383 {
+  display: inline;
+  fill: none;
+  stroke: #E5F5FA;
+  stroke-width: 1.185; }
+
+.st384 {
+  display: inline;
+  fill: none;
+  stroke: #DFF3FB;
+  stroke-width: 1.185; }
+
+.st385 {
+  display: inline;
+  fill: none;
+  stroke: #EAF7FE;
+  stroke-width: 1.185; }
+
+.st386 {
+  display: inline;
+  fill: none;
+  stroke: #E4F5FD;
+  stroke-width: 1.185; }
+
+.st387 {
+  display: inline;
+  fill: none;
+  stroke: #D9F0F8;
+  stroke-width: 1.185; }
+
+.st388 {
+  display: inline;
+  fill: none;
+  stroke: #ADE0EF;
+  stroke-width: 1.185; }
+
+.st389 {
+  display: inline;
+  fill: none;
+  stroke: #97D9EC;
+  stroke-width: 1.185; }
+
+.st390 {
+  display: inline;
+  fill: none;
+  stroke: #A1DCEE;
+  stroke-width: 1.185; }
+
+.st391 {
+  display: inline;
+  fill: none;
+  stroke: #BCE6F3;
+  stroke-width: 1.185; }
+
+.st392 {
+  display: inline;
+  fill: none;
+  stroke: #CDECF7;
+  stroke-width: 1.185; }
+
+.st393 {
+  display: inline;
+  fill: none;
+  stroke: #D1EDF9;
+  stroke-width: 1.185; }
+
+.st394 {
+  display: inline;
+  fill: none;
+  stroke: #D4EFFB;
+  stroke-width: 1.185; }
+
+.st395 {
+  display: inline;
+  fill: none;
+  stroke: #F7FBFE;
+  stroke-width: 1.185; }
+
+.st396 {
+  display: inline;
+  fill: none;
+  stroke: #ECF8FE;
+  stroke-width: 1.185; }
+
+.st397 {
+  display: inline;
+  fill: none;
+  stroke: #E6F4FC;
+  stroke-width: 1.185; }
+
+.st398 {
+  display: inline;
+  fill: none;
+  stroke: #B0E2F5;
+  stroke-width: 1.185; }
+
+.st399 {
+  display: inline;
+  fill: none;
+  stroke: #ABE0F4;
+  stroke-width: 1.185; }
+
+.st400 {
+  display: inline;
+  fill: none;
+  stroke: #89D5EE;
+  stroke-width: 1.185; }
+
+.st401 {
+  display: inline;
+  fill: none;
+  stroke: #8BD5F0;
+  stroke-width: 1.185; }
+
+.st402 {
+  display: inline;
+  fill: none;
+  stroke: #9FDCF3;
+  stroke-width: 1.185; }
+
+.st403 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6FD;
+  stroke-width: 1.185; }
+
+.st404 {
+  display: inline;
+  fill: none;
+  stroke: #F4FBFE;
+  stroke-width: 1.185; }
+
+.st405 {
+  display: inline;
+  fill: none;
+  stroke: #F2F7FC;
+  stroke-width: 1.185; }
+
+.st406 {
+  display: inline;
+  fill: none;
+  stroke: #E7F3FC;
+  stroke-width: 1.185; }
+
+.st407 {
+  display: inline;
+  fill: none;
+  stroke: #B9E5FB;
+  stroke-width: 1.185; }
+
+.st408 {
+  display: inline;
+  fill: none;
+  stroke: #CDEAFA;
+  stroke-width: 1.185; }
+
+.st409 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDFB;
+  stroke-width: 1.185; }
+
+.st410 {
+  display: inline;
+  fill: none;
+  stroke: #DDF1FC;
+  stroke-width: 1.185; }
+
+.st411 {
+  display: inline;
+  fill: none;
+  stroke: #C2E6F9;
+  stroke-width: 1.185; }
+
+.st412 {
+  display: inline;
+  fill: none;
+  stroke: #BAE2F8;
+  stroke-width: 1.185; }
+
+.st413 {
+  display: inline;
+  fill: none;
+  stroke: #B3DEF6;
+  stroke-width: 1.185; }
+
+.st414 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCF8;
+  stroke-width: 1.185; }
+
+.st415 {
+  display: inline;
+  fill: none;
+  stroke: #DFF1FC;
+  stroke-width: 1.185; }
+
+.st416 {
+  display: inline;
+  fill: none;
+  stroke: #FAFCFE;
+  stroke-width: 1.185; }
+
+.st417 {
+  display: inline;
+  fill: none;
+  stroke: #EEF6FC;
+  stroke-width: 1.185; }
+
+.st418 {
+  display: inline;
+  fill: none;
+  stroke: #EFF8FD;
+  stroke-width: 1.185; }
+
+.st419 {
+  display: inline;
+  fill: none;
+  stroke: #DDEEFA;
+  stroke-width: 1.185; }
+
+.st420 {
+  display: inline;
+  fill: none;
+  stroke: #C2E2F7;
+  stroke-width: 1.185; }
+
+.st421 {
+  display: inline;
+  fill: none;
+  stroke: #CCE7F9;
+  stroke-width: 1.185; }
+
+.st422 {
+  display: inline;
+  fill: none;
+  stroke: #9DD5F4;
+  stroke-width: 1.185; }
+
+.st423 {
+  display: inline;
+  fill: none;
+  stroke: #B1DCF6;
+  stroke-width: 1.185; }
+
+.st424 {
+  display: inline;
+  fill: none;
+  stroke: #86D0EE;
+  stroke-width: 1.185; }
+
+.st425 {
+  display: inline;
+  fill: none;
+  stroke: #82CCED;
+  stroke-width: 1.185; }
+
+.st426 {
+  display: inline;
+  fill: none;
+  stroke: #DDEDFA;
+  stroke-width: 1.185; }
+
+.st427 {
+  display: inline;
+  fill: none;
+  stroke: #ECF6FD;
+  stroke-width: 1.185; }
+
+.st428 {
+  display: inline;
+  fill: none;
+  stroke: #F4F8FD;
+  stroke-width: 1.185; }
+
+.st429 {
+  display: inline;
+  fill: none;
+  stroke: #B7DEF6;
+  stroke-width: 1.185; }
+
+.st430 {
+  display: inline;
+  fill: none;
+  stroke: #D4E9F8;
+  stroke-width: 1.185; }
+
+.st431 {
+  display: inline;
+  fill: none;
+  stroke: #B6DDF5;
+  stroke-width: 1.185; }
+
+.st432 {
+  display: inline;
+  fill: none;
+  stroke: #8BCCEF;
+  stroke-width: 1.185; }
+
+.st433 {
+  display: inline;
+  fill: none;
+  stroke: #91CCF0;
+  stroke-width: 1.185; }
+
+.st434 {
+  display: inline;
+  fill: none;
+  stroke: #BEDEF5;
+  stroke-width: 1.185; }
+
+.st435 {
+  display: inline;
+  fill: none;
+  stroke: #99D1F1;
+  stroke-width: 1.185; }
+
+.st436 {
+  display: inline;
+  fill: none;
+  stroke: #AED8F3;
+  stroke-width: 1.185; }
+
+.st437 {
+  display: inline;
+  fill: none;
+  stroke: #DAECF9;
+  stroke-width: 1.185; }
+
+.st438 {
+  display: inline;
+  fill: none;
+  stroke: #9DD0F0;
+  stroke-width: 1.185; }
+
+.st439 {
+  display: inline;
+  fill: none;
+  stroke: #A5D3F1;
+  stroke-width: 1.185; }
+
+.st440 {
+  display: inline;
+  fill: none;
+  stroke: #96CDEE;
+  stroke-width: 1.185; }
+
+.st441 {
+  display: inline;
+  fill: none;
+  stroke: #A9D5F2;
+  stroke-width: 1.185; }
+
+.st442 {
+  display: inline;
+  fill: none;
+  stroke: #ABD5F2;
+  stroke-width: 1.185; }
+
+.st443 {
+  display: inline;
+  fill: none;
+  stroke: #9BCFF0;
+  stroke-width: 1.185; }
+
+.st444 {
+  display: inline;
+  fill: none;
+  stroke: #A5D3F2;
+  stroke-width: 1.185; }
+
+.st445 {
+  display: inline;
+  fill: none;
+  stroke: #F0F5FC;
+  stroke-width: 1.185; }
+
+.st446 {
+  display: inline;
+  fill: none;
+  stroke: #E0EEFA;
+  stroke-width: 1.185; }
+
+.st447 {
+  display: inline;
+  fill: none;
+  stroke: #B1D7F2;
+  stroke-width: 1.185; }
+
+.st448 {
+  display: inline;
+  fill: none;
+  stroke: #BEDDF4;
+  stroke-width: 1.185; }
+
+.st449 {
+  display: inline;
+  fill: none;
+  stroke: #D3E8F8;
+  stroke-width: 1.185; }
+
+.st450 {
+  display: inline;
+  fill: none;
+  stroke: #B0D6F1;
+  stroke-width: 1.185; }
+
+.st451 {
+  display: inline;
+  fill: none;
+  stroke: #C4DFF5;
+  stroke-width: 1.185; }
+
+.st452 {
+  display: inline;
+  fill: none;
+  stroke: #B9D9F2;
+  stroke-width: 1.185; }
+
+.st453 {
+  display: inline;
+  fill: none;
+  stroke: #D0E4F6;
+  stroke-width: 1.185; }
+
+.st454 {
+  display: inline;
+  fill: none;
+  stroke: #C7E0F5;
+  stroke-width: 1.185; }
+
+.st455 {
+  display: inline;
+  fill: none;
+  stroke: #BDDBF3;
+  stroke-width: 1.185; }
+
+.st456 {
+  display: inline;
+  fill: none;
+  stroke: #C8E1F5;
+  stroke-width: 1.185; }
+
+.st457 {
+  display: inline;
+  fill: none;
+  stroke: #C2DEF4;
+  stroke-width: 1.185; }
+
+.st458 {
+  display: inline;
+  fill: none;
+  stroke: #D5E8F8;
+  stroke-width: 1.185; }
+
+.st459 {
+  display: inline;
+  fill: none;
+  stroke: #E3EEF9;
+  stroke-width: 1.185; }
+
+.st460 {
+  display: inline;
+  fill: none;
+  stroke: #DEECF9;
+  stroke-width: 1.185; }
+
+.st461 {
+  display: inline;
+  fill: none;
+  stroke: #E8F1FA;
+  stroke-width: 1.185; }
+
+.st462 {
+  display: inline;
+  fill: none;
+  stroke: #F2F6FC;
+  stroke-width: 1.185; }
+
+.st463 {
+  display: inline;
+  fill: none;
+  stroke: #D1E4F6;
+  stroke-width: 1.185; }
+
+.st464 {
+  display: inline;
+  fill: none;
+  stroke: #CBE2F5;
+  stroke-width: 1.185; }
+
+.st465 {
+  display: inline;
+  fill: none;
+  stroke: #D5E6F6;
+  stroke-width: 1.185; }
+
+.st466 {
+  display: inline;
+  fill: none;
+  stroke: #EFF6FC;
+  stroke-width: 1.185; }
+
+.st467 {
+  display: inline;
+  fill: none;
+  stroke: #DFECF9;
+  stroke-width: 1.185; }
+
+.st468 {
+  display: inline;
+  fill: none;
+  stroke: #DFEBF8;
+  stroke-width: 1.185; }
+
+.st469 {
+  display: inline;
+  fill: none;
+  stroke: #D8E8F7;
+  stroke-width: 1.185; }
+
+.st470 {
+  display: inline;
+  fill: none;
+  stroke: #ECF3FB;
+  stroke-width: 1.185; }
+
+.st471 {
+  display: inline;
+  fill: none;
+  stroke: #F6F8FC;
+  stroke-width: 1.185; }
+
+.st472 {
+  display: inline;
+  fill: none;
+  stroke: #E8F0FA;
+  stroke-width: 1.185; }
+
+.st473 {
+  display: inline;
+  fill: none;
+  stroke: #DEEAF8;
+  stroke-width: 1.185; }
+
+.st474 {
+  display: inline;
+  fill: none;
+  stroke: #E7F0FA;
+  stroke-width: 1.185; }
+
+.st475 {
+  display: inline;
+  fill: none;
+  stroke: #EFF4FB;
+  stroke-width: 1.185; }
+
+.st476 {
+  display: inline;
+  fill: none;
+  stroke: #EEF3FA;
+  stroke-width: 1.185; }
+
+.st477 {
+  display: inline;
+  fill: none;
+  stroke: #F7F9FD;
+  stroke-width: 1.185; }
+
+.st478 {
+  display: inline;
+  fill: none;
+  stroke: #F1F6FC;
+  stroke-width: 1.185; }
+
+.st479 {
+  display: inline;
+  fill: none;
+  stroke: #F3F7FC;
+  stroke-width: 1.185; }
+
+.st480 {
+  display: inline;
+  fill: none;
+  stroke: #EFF3FA;
+  stroke-width: 1.185; }
+
+.st481 {
+  display: inline;
+  fill: none;
+  stroke: #EBC6DE;
+  stroke-width: 1.185; }
+
+.st482 {
+  display: inline;
+  fill: none;
+  stroke: #F6E2EE;
+  stroke-width: 1.185; }
+
+.st483 {
+  display: inline;
+  fill: none;
+  stroke: #FCEFF5;
+  stroke-width: 1.185; }
+
+.st484 {
+  display: inline;
+  fill: none;
+  stroke: #FEF4F8;
+  stroke-width: 1.185; }
+
+.st485 {
+  display: inline;
+  fill: none;
+  stroke: #F9EAF2;
+  stroke-width: 1.185; }
+
+.st486 {
+  display: inline;
+  fill: none;
+  stroke: #F7DEEC;
+  stroke-width: 1.185; }
+
+.st487 {
+  display: inline;
+  fill: none;
+  stroke: #F9EAF3;
+  stroke-width: 1.185; }
+
+.st488 {
+  display: inline;
+  fill: none;
+  stroke: #F2D0E4;
+  stroke-width: 1.185; }
+
+.st489 {
+  display: inline;
+  fill: none;
+  stroke: #EDC9E0;
+  stroke-width: 1.185; }
+
+.st490 {
+  display: inline;
+  fill: none;
+  stroke: #F6DAE9;
+  stroke-width: 1.185; }
+
+.st491 {
+  display: inline;
+  fill: none;
+  stroke: #F5D1E4;
+  stroke-width: 1.185; }
+
+.st492 {
+  display: inline;
+  fill: none;
+  stroke: #DEACCF;
+  stroke-width: 1.185; }
+
+.st493 {
+  display: inline;
+  fill: none;
+  stroke: #F8DEEB;
+  stroke-width: 1.185; }
+
+.st494 {
+  display: inline;
+  fill: none;
+  stroke: #E1B1D2;
+  stroke-width: 1.185; }
+
+.st495 {
+  display: inline;
+  fill: none;
+  stroke: #E4B3D3;
+  stroke-width: 1.185; }
+
+.st496 {
+  display: inline;
+  fill: none;
+  stroke: #DAA6CC;
+  stroke-width: 1.185; }
+
+.st497 {
+  display: inline;
+  fill: none;
+  stroke: #DDA0C8;
+  stroke-width: 1.185; }
+
+.st498 {
+  display: inline;
+  fill: none;
+  stroke: #DCA2C9;
+  stroke-width: 1.185; }
+
+.st499 {
+  display: inline;
+  fill: none;
+  stroke: #E6ADCF;
+  stroke-width: 1.185; }
+
+.st500 {
+  display: inline;
+  fill: none;
+  stroke: #E6B5D4;
+  stroke-width: 1.185; }
+
+.st501 {
+  display: inline;
+  fill: none;
+  stroke: #EBB3D2;
+  stroke-width: 1.185; }
+
+.st502 {
+  display: inline;
+  fill: none;
+  stroke: #F2BBD4;
+  stroke-width: 1.185; }
+
+.st503 {
+  display: inline;
+  fill: none;
+  stroke: #EEB7D4;
+  stroke-width: 1.185; }
+
+.st504 {
+  display: inline;
+  fill: none;
+  stroke: #FCEFF4;
+  stroke-width: 1.185; }
+
+.st505 {
+  display: inline;
+  fill: none;
+  stroke: #FBE6E8;
+  stroke-width: 1.185; }
+
+.st506 {
+  display: inline;
+  fill: none;
+  stroke: #F6C5D8;
+  stroke-width: 1.185; }
+
+.st507 {
+  display: inline;
+  fill: none;
+  stroke: #FADDE3;
+  stroke-width: 1.185; }
+
+.st508 {
+  display: inline;
+  fill: none;
+  stroke: #FADADA;
+  stroke-width: 1.185; }
+
+.st509 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFB;
+  stroke-width: 1.185; }
+
+.st510 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF3;
+  stroke-width: 1.185; }
+
+.st511 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFA;
+  stroke-width: 1.185; }
+
+.st512 {
+  display: inline;
+  fill: none;
+  stroke: #FCE7E4;
+  stroke-width: 1.185; }
+
+.st513 {
+  display: inline;
+  fill: none;
+  stroke: #FEEBE2;
+  stroke-width: 1.185; }
+
+.st514 {
+  display: inline;
+  fill: none;
+  stroke: #FEE6D8;
+  stroke-width: 1.185; }
+
+.st515 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7EE;
+  stroke-width: 1.185; }
+
+.st516 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F1;
+  stroke-width: 1.185; }
+
+.st517 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAEF;
+  stroke-width: 1.185; }
+
+.st518 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0DD;
+  stroke-width: 1.185; }
+
+.st519 {
+  display: inline;
+  fill: none;
+  stroke: #FFEEDE;
+  stroke-width: 1.185; }
+
+.st520 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3E0;
+  stroke-width: 1.185; }
+
+.st521 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3DF;
+  stroke-width: 1.185; }
+
+.st522 {
+  display: inline;
+  fill: none;
+  stroke: #FFE7C0;
+  stroke-width: 1.185; }
+
+.st523 {
+  display: inline;
+  fill: none;
+  stroke: #FDE0C0;
+  stroke-width: 1.185; }
+
+.st524 {
+  display: inline;
+  fill: none;
+  stroke: #FDE5CE;
+  stroke-width: 1.185; }
+
+.st525 {
+  display: inline;
+  fill: none;
+  stroke: #FDE2BB;
+  stroke-width: 1.185; }
+
+.st526 {
+  display: inline;
+  fill: none;
+  stroke: #FBD5AE;
+  stroke-width: 1.185; }
+
+.st527 {
+  display: inline;
+  fill: none;
+  stroke: #FCC987;
+  stroke-width: 1.185; }
+
+.st528 {
+  display: inline;
+  fill: none;
+  stroke: #FBD4AA;
+  stroke-width: 1.185; }
+
+.st529 {
+  display: inline;
+  fill: none;
+  stroke: #FDC792;
+  stroke-width: 1.185; }
+
+.st530 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8EA;
+  stroke-width: 1.185; }
+
+.st531 {
+  display: inline;
+  fill: none;
+  stroke: #FEF3DA;
+  stroke-width: 1.185; }
+
+.st532 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7E7;
+  stroke-width: 1.185; }
+
+.st533 {
+  display: inline;
+  fill: none;
+  stroke: #FFE5B3;
+  stroke-width: 1.185; }
+
+.st534 {
+  display: inline;
+  fill: none;
+  stroke: #FFE8B7;
+  stroke-width: 1.185; }
+
+.st535 {
+  display: inline;
+  fill: none;
+  stroke: #FFD9A2;
+  stroke-width: 1.185; }
+
+.st536 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFC1;
+  stroke-width: 1.185; }
+
+.st537 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4D6;
+  stroke-width: 1.185; }
+
+.st538 {
+  display: inline;
+  fill: none;
+  stroke: #FFD995;
+  stroke-width: 1.185; }
+
+.st539 {
+  display: inline;
+  fill: none;
+  stroke: #FFDC92;
+  stroke-width: 1.185; }
+
+.st540 {
+  display: inline;
+  fill: none;
+  stroke: #FEC76E;
+  stroke-width: 1.185; }
+
+.st541 {
+  display: inline;
+  fill: none;
+  stroke: #FCB861;
+  stroke-width: 1.185; }
+
+.st542 {
+  display: inline;
+  fill: none;
+  stroke: #FDBF62;
+  stroke-width: 1.185; }
+
+.st543 {
+  display: inline;
+  fill: none;
+  stroke: #FBBD69;
+  stroke-width: 1.185; }
+
+.st544 {
+  display: inline;
+  fill: none;
+  stroke: #FECB7B;
+  stroke-width: 1.185; }
+
+.st545 {
+  display: inline;
+  fill: none;
+  stroke: #FBB464;
+  stroke-width: 1.185; }
+
+.st546 {
+  display: inline;
+  fill: none;
+  stroke: #FFE5A6;
+  stroke-width: 1.185; }
+
+.st547 {
+  display: inline;
+  fill: none;
+  stroke: #FDE398;
+  stroke-width: 1.185; }
+
+.st548 {
+  display: inline;
+  fill: none;
+  stroke: #FFDC8A;
+  stroke-width: 1.185; }
+
+.st549 {
+  display: inline;
+  fill: none;
+  stroke: #FFEDBE;
+  stroke-width: 1.185; }
+
+.st550 {
+  display: inline;
+  fill: none;
+  stroke: #FEE298;
+  stroke-width: 1.185; }
+
+.st551 {
+  display: inline;
+  fill: none;
+  stroke: #FDDD81;
+  stroke-width: 1.185; }
+
+.st552 {
+  display: inline;
+  fill: none;
+  stroke: #FFD46B;
+  stroke-width: 1.185; }
+
+.st553 {
+  display: inline;
+  fill: none;
+  stroke: #FFD87A;
+  stroke-width: 1.185; }
+
+.st554 {
+  display: inline;
+  fill: none;
+  stroke: #FCB54F;
+  stroke-width: 1.185; }
+
+.st555 {
+  display: inline;
+  fill: none;
+  stroke: #FBB051;
+  stroke-width: 1.185; }
+
+.st556 {
+  display: inline;
+  fill: none;
+  stroke: #FCB355;
+  stroke-width: 1.185; }
+
+.st557 {
+  display: inline;
+  fill: none;
+  stroke: #FDB94F;
+  stroke-width: 1.185; }
+
+.st558 {
+  display: inline;
+  fill: none;
+  stroke: #FFCB66;
+  stroke-width: 1.185; }
+
+.st559 {
+  display: inline;
+  fill: none;
+  stroke: #FFCC6E;
+  stroke-width: 1.185; }
+
+.st560 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE66;
+  stroke-width: 1.185; }
+
+.st561 {
+  display: inline;
+  fill: none;
+  stroke: #FDC061;
+  stroke-width: 1.185; }
+
+.st562 {
+  display: inline;
+  fill: none;
+  stroke: #FEC056;
+  stroke-width: 1.185; }
+
+.st563 {
+  display: inline;
+  fill: none;
+  stroke: #FFC95A;
+  stroke-width: 1.185; }
+
+.st564 {
+  display: inline;
+  fill: none;
+  stroke: #FEC559;
+  stroke-width: 1.185; }
+
+.st565 {
+  display: inline;
+  fill: none;
+  stroke: #FFCD66;
+  stroke-width: 1.185; }
+
+.st566 {
+  display: inline;
+  fill: none;
+  stroke: #FFCC5E;
+  stroke-width: 1.185; }
+
+.st567 {
+  display: inline;
+  fill: none;
+  stroke: #FEC159;
+  stroke-width: 1.185; }
+
+.st568 {
+  display: inline;
+  fill: none;
+  stroke: #FFCC68;
+  stroke-width: 1.185; }
+
+.st569 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE77;
+  stroke-width: 1.185; }
+
+.st570 {
+  display: inline;
+  fill: none;
+  stroke: #FFC869;
+  stroke-width: 1.185; }
+
+.st571 {
+  display: inline;
+  fill: none;
+  stroke: #FEF6E6;
+  stroke-width: 1.185; }
+
+.st572 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8EC;
+  stroke-width: 1.185; }
+
+.st573 {
+  display: inline;
+  fill: none;
+  stroke: #FDF5DD;
+  stroke-width: 1.185; }
+
+.st574 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4D3;
+  stroke-width: 1.185; }
+
+.st575 {
+  display: inline;
+  fill: none;
+  stroke: #FCF1C6;
+  stroke-width: 1.185; }
+
+.st576 {
+  display: inline;
+  fill: none;
+  stroke: #F9E6A0;
+  stroke-width: 1.185; }
+
+.st577 {
+  display: inline;
+  fill: none;
+  stroke: #FBE9AB;
+  stroke-width: 1.185; }
+
+.st578 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCF6;
+  stroke-width: 1.185; }
+
+.st579 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDF8;
+  stroke-width: 1.185; }
+
+.st580 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF1;
+  stroke-width: 1.185; }
+
+.st581 {
+  display: inline;
+  fill: none;
+  stroke: #FCD972;
+  stroke-width: 1.185; }
+
+.st582 {
+  display: inline;
+  fill: none;
+  stroke: #FED56A;
+  stroke-width: 1.185; }
+
+.st583 {
+  display: inline;
+  fill: none;
+  stroke: #FBDA75;
+  stroke-width: 1.185; }
+
+.st584 {
+  display: inline;
+  fill: none;
+  stroke: #FCFBF3;
+  stroke-width: 1.185; }
+
+.st585 {
+  display: inline;
+  fill: none;
+  stroke: #FBFAEC;
+  stroke-width: 1.185; }
+
+.st586 {
+  display: inline;
+  fill: none;
+  stroke: #FBFAED;
+  stroke-width: 1.185; }
+
+.st587 {
+  display: inline;
+  fill: none;
+  stroke: #F7F1C5;
+  stroke-width: 1.185; }
+
+.st588 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4D6;
+  stroke-width: 1.185; }
+
+.st589 {
+  display: inline;
+  fill: none;
+  stroke: #FAF2CE;
+  stroke-width: 1.185; }
+
+.st590 {
+  display: inline;
+  fill: none;
+  stroke: #F7E289;
+  stroke-width: 1.185; }
+
+.st591 {
+  display: inline;
+  fill: none;
+  stroke: #FADF82;
+  stroke-width: 1.185; }
+
+.st592 {
+  display: inline;
+  fill: none;
+  stroke: #F7DE7B;
+  stroke-width: 1.185; }
+
+.st593 {
+  display: inline;
+  fill: none;
+  stroke: #F6E89E;
+  stroke-width: 1.185; }
+
+.st594 {
+  display: inline;
+  fill: none;
+  stroke: #F2E48E;
+  stroke-width: 1.185; }
+
+.st595 {
+  display: inline;
+  fill: none;
+  stroke: #EEE38A;
+  stroke-width: 1.185; }
+
+.st596 {
+  display: inline;
+  fill: none;
+  stroke: #EAE797;
+  stroke-width: 1.185; }
+
+.st597 {
+  display: inline;
+  fill: none;
+  stroke: #EEEEBD;
+  stroke-width: 1.185; }
+
+.st598 {
+  display: inline;
+  fill: none;
+  stroke: #F7DF7D;
+  stroke-width: 1.185; }
+
+.st599 {
+  display: inline;
+  fill: none;
+  stroke: #FADD7C;
+  stroke-width: 1.185; }
+
+.st600 {
+  display: inline;
+  fill: none;
+  stroke: #F9F7EA;
+  stroke-width: 1.185; }
+
+.st601 {
+  display: inline;
+  fill: none;
+  stroke: #FAFAEE;
+  stroke-width: 1.185; }
+
+.st602 {
+  display: inline;
+  fill: none;
+  stroke: #FCFBF4;
+  stroke-width: 1.185; }
+
+.st603 {
+  display: inline;
+  fill: none;
+  stroke: #EBE38B;
+  stroke-width: 1.185; }
+
+.st604 {
+  display: inline;
+  fill: none;
+  stroke: #F4E391;
+  stroke-width: 1.185; }
+
+.st605 {
+  display: inline;
+  fill: none;
+  stroke: #FAFBF7;
+  stroke-width: 1.185; }
+
+.st606 {
+  display: inline;
+  fill: none;
+  stroke: #FAFCF8;
+  stroke-width: 1.185; }
+
+.st607 {
+  display: inline;
+  fill: none;
+  stroke: #FAFBF6;
+  stroke-width: 1.185; }
+
+.st608 {
+  display: inline;
+  fill: none;
+  stroke: #F5FAF2;
+  stroke-width: 1.185; }
+
+.st609 {
+  display: inline;
+  fill: none;
+  stroke: #F6F8E9;
+  stroke-width: 1.185; }
+
+.st610 {
+  display: inline;
+  fill: none;
+  stroke: #F2F4D9;
+  stroke-width: 1.185; }
+
+.st611 {
+  display: inline;
+  fill: none;
+  stroke: #F3F0C1;
+  stroke-width: 1.185; }
+
+.st612 {
+  display: inline;
+  fill: none;
+  stroke: #F5F6DA;
+  stroke-width: 1.185; }
+
+.st613 {
+  display: inline;
+  fill: none;
+  stroke: #EAEAAE;
+  stroke-width: 1.185; }
+
+.st614 {
+  display: inline;
+  fill: none;
+  stroke: #DEE9A5;
+  stroke-width: 1.185; }
+
+.st615 {
+  display: inline;
+  fill: none;
+  stroke: #D2E5A4;
+  stroke-width: 1.185; }
+
+.st616 {
+  display: inline;
+  fill: none;
+  stroke: #DFECBD;
+  stroke-width: 1.185; }
+
+.st617 {
+  display: inline;
+  fill: none;
+  stroke: #ECF3D7;
+  stroke-width: 1.185; }
+
+.st618 {
+  display: inline;
+  fill: none;
+  stroke: #DCEBBD;
+  stroke-width: 1.185; }
+
+.st619 {
+  display: inline;
+  fill: none;
+  stroke: #BEDDA3;
+  stroke-width: 1.185; }
+
+.st620 {
+  display: inline;
+  fill: none;
+  stroke: #EFF6E2;
+  stroke-width: 1.185; }
+
+.st621 {
+  display: inline;
+  fill: none;
+  stroke: #ECF5E3;
+  stroke-width: 1.185; }
+
+.st622 {
+  display: inline;
+  fill: none;
+  stroke: #F0F7EA;
+  stroke-width: 1.185; }
+
+.st623 {
+  display: inline;
+  fill: none;
+  stroke: #D3E7B7;
+  stroke-width: 1.185; }
+
+.st624 {
+  display: inline;
+  fill: none;
+  stroke: #DFEED4;
+  stroke-width: 1.185; }
+
+.st625 {
+  display: inline;
+  fill: none;
+  stroke: #E8F3E3;
+  stroke-width: 1.185; }
+
+.st626 {
+  display: inline;
+  fill: none;
+  stroke: #F0F7ED;
+  stroke-width: 1.185; }
+
+.st627 {
+  display: inline;
+  fill: none;
+  stroke: #C5E1AB;
+  stroke-width: 1.185; }
+
+.st628 {
+  display: inline;
+  fill: none;
+  stroke: #C6E09C;
+  stroke-width: 1.185; }
+
+.st629 {
+  display: inline;
+  fill: none;
+  stroke: #D3E9CD;
+  stroke-width: 1.185; }
+
+.st630 {
+  display: inline;
+  fill: none;
+  stroke: #BFDFB2;
+  stroke-width: 1.185; }
+
+.st631 {
+  display: inline;
+  fill: none;
+  stroke: #F0F8F1;
+  stroke-width: 1.185; }
+
+.st632 {
+  display: inline;
+  fill: none;
+  stroke: #F2F8EE;
+  stroke-width: 1.185; }
+
+.st633 {
+  display: inline;
+  fill: none;
+  stroke: #F4F9F3;
+  stroke-width: 1.185; }
+
+.st634 {
+  display: inline;
+  fill: none;
+  stroke: #EBF5EA;
+  stroke-width: 1.185; }
+
+.st635 {
+  display: inline;
+  fill: none;
+  stroke: #F4F9F4;
+  stroke-width: 1.185; }
+
+.st636 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFC;
+  stroke-width: 1.185; }
+
+.st637 {
+  display: inline;
+  fill: none;
+  stroke: #E4F2E6;
+  stroke-width: 1.185; }
+
+.st638 {
+  display: inline;
+  fill: none;
+  stroke: #CBE6CA;
+  stroke-width: 1.185; }
+
+.st639 {
+  display: inline;
+  fill: none;
+  stroke: #A7D59D;
+  stroke-width: 1.185; }
+
+.st640 {
+  display: inline;
+  fill: none;
+  stroke: #BBDB97;
+  stroke-width: 1.185; }
+
+.st641 {
+  display: inline;
+  fill: none;
+  stroke: #A9D69E;
+  stroke-width: 1.185; }
+
+.st642 {
+  display: inline;
+  fill: none;
+  stroke: #F7FBF8;
+  stroke-width: 1.185; }
+
+.st643 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFC;
+  stroke-width: 1.185; }
+
+.st644 {
+  display: inline;
+  fill: none;
+  stroke: #FCFDFD;
+  stroke-width: 1.185; }
+
+.st645 {
+  display: inline;
+  fill: none;
+  stroke: #D3EAD7;
+  stroke-width: 1.185; }
+
+.st646 {
+  display: inline;
+  fill: none;
+  stroke: #BBDFBB;
+  stroke-width: 1.185; }
+
+.st647 {
+  display: inline;
+  fill: none;
+  stroke: #ADD8A8;
+  stroke-width: 1.185; }
+
+.st648 {
+  display: inline;
+  fill: none;
+  stroke: #B4DBAC;
+  stroke-width: 1.185; }
+
+.st649 {
+  display: inline;
+  fill: none;
+  stroke: #F2F9F6;
+  stroke-width: 1.185; }
+
+.st650 {
+  display: inline;
+  fill: none;
+  stroke: #E1F1E7;
+  stroke-width: 1.185; }
+
+.st651 {
+  display: inline;
+  fill: none;
+  stroke: #BFE2CD;
+  stroke-width: 1.185; }
+
+.st652 {
+  display: inline;
+  fill: none;
+  stroke: #B1DBBC;
+  stroke-width: 1.185; }
+
+.st653 {
+  display: inline;
+  fill: none;
+  stroke: #A0D5B2;
+  stroke-width: 1.185; }
+
+.st654 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAF8;
+  stroke-width: 1.185; }
+
+.st655 {
+  display: inline;
+  fill: none;
+  stroke: #E8F4EF;
+  stroke-width: 1.185; }
+
+.st656 {
+  display: inline;
+  fill: none;
+  stroke: #DEF0E7;
+  stroke-width: 1.185; }
+
+.st657 {
+  display: inline;
+  fill: none;
+  stroke: #D3EBDD;
+  stroke-width: 1.185; }
+
+.st658 {
+  display: inline;
+  fill: none;
+  stroke: #94D0A7;
+  stroke-width: 1.185; }
+
+.st659 {
+  display: inline;
+  fill: none;
+  stroke: #9BD2A3;
+  stroke-width: 1.185; }
+
+.st660 {
+  display: inline;
+  fill: none;
+  stroke: #9CD3A8;
+  stroke-width: 1.185; }
+
+.st661 {
+  display: inline;
+  fill: none;
+  stroke: #93D0A6;
+  stroke-width: 1.185; }
+
+.st662 {
+  display: inline;
+  fill: none;
+  stroke: #B5DFCC;
+  stroke-width: 1.185; }
+
+.st663 {
+  display: inline;
+  fill: none;
+  stroke: #D0EADF;
+  stroke-width: 1.185; }
+
+.st664 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6F2;
+  stroke-width: 1.185; }
+
+.st665 {
+  display: inline;
+  fill: none;
+  stroke: #EBF6F3;
+  stroke-width: 1.185; }
+
+.st666 {
+  display: inline;
+  fill: none;
+  stroke: #F0F8F7;
+  stroke-width: 1.185; }
+
+.st667 {
+  display: inline;
+  fill: none;
+  stroke: #A7DACA;
+  stroke-width: 1.185; }
+
+.st668 {
+  display: inline;
+  fill: none;
+  stroke: #E4F3F0;
+  stroke-width: 1.185; }
+
+.st669 {
+  display: inline;
+  fill: none;
+  stroke: #F0F9F8;
+  stroke-width: 1.185; }
+
+.st670 {
+  display: inline;
+  fill: none;
+  stroke: #E4F3F1;
+  stroke-width: 1.185; }
+
+.st671 {
+  display: inline;
+  fill: none;
+  stroke: #C7E7E1;
+  stroke-width: 1.185; }
+
+.st672 {
+  display: inline;
+  fill: none;
+  stroke: #D0EBE5;
+  stroke-width: 1.185; }
+
+.st673 {
+  display: inline;
+  fill: none;
+  stroke: #D9EEEB;
+  stroke-width: 1.185; }
+
+.st674 {
+  display: inline;
+  fill: none;
+  stroke: #8ED2C5;
+  stroke-width: 1.185; }
+
+.st675 {
+  display: inline;
+  fill: none;
+  stroke: #A9DCD6;
+  stroke-width: 1.185; }
+
+.st676 {
+  display: inline;
+  fill: none;
+  stroke: #C8E8E4;
+  stroke-width: 1.185; }
+
+.st677 {
+  display: inline;
+  fill: none;
+  stroke: #E8F5F4;
+  stroke-width: 1.185; }
+
+.st678 {
+  display: inline;
+  fill: none;
+  stroke: #F2FAFA;
+  stroke-width: 1.185; }
+
+.st679 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6F4;
+  stroke-width: 1.185; }
+
+.st680 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFA;
+  stroke-width: 1.185; }
+
+.st681 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFD;
+  stroke-width: 1.185; }
+
+.st682 {
+  display: inline;
+  fill: none;
+  stroke: #C9E8E5;
+  stroke-width: 1.185; }
+
+.st683 {
+  display: inline;
+  fill: none;
+  stroke: #DEF1F0;
+  stroke-width: 1.185; }
+
+.st684 {
+  display: inline;
+  fill: none;
+  stroke: #CCEAE9;
+  stroke-width: 1.185; }
+
+.st685 {
+  display: inline;
+  fill: none;
+  stroke: #DBF0EF;
+  stroke-width: 1.185; }
+
+.st686 {
+  display: inline;
+  fill: none;
+  stroke: #DBF0F1;
+  stroke-width: 1.185; }
+
+.st687 {
+  display: inline;
+  fill: none;
+  stroke: #D0ECED;
+  stroke-width: 1.185; }
+
+.st688 {
+  display: inline;
+  fill: none;
+  stroke: #8AD1CB;
+  stroke-width: 1.185; }
+
+.st689 {
+  display: inline;
+  fill: none;
+  stroke: #8BD1CD;
+  stroke-width: 1.185; }
+
+.st690 {
+  display: inline;
+  fill: none;
+  stroke: #B1DFDE;
+  stroke-width: 1.185; }
+
+.st691 {
+  display: inline;
+  fill: none;
+  stroke: #A0D9D8;
+  stroke-width: 1.185; }
+
+.st692 {
+  display: inline;
+  fill: none;
+  stroke: #B6E2E2;
+  stroke-width: 1.185; }
+
+.st693 {
+  display: inline;
+  fill: none;
+  stroke: #C4E7EA;
+  stroke-width: 1.185; }
+
+.st694 {
+  display: inline;
+  fill: none;
+  stroke: #96D6D8;
+  stroke-width: 1.185; }
+
+.st695 {
+  display: inline;
+  fill: none;
+  stroke: #8ED4D8;
+  stroke-width: 1.185; }
+
+.st696 {
+  display: inline;
+  fill: none;
+  stroke: #AFE0E6;
+  stroke-width: 1.185; }
+
+.st697 {
+  display: inline;
+  fill: none;
+  stroke: #F4FAFB;
+  stroke-width: 1.185; }
+
+.st698 {
+  display: inline;
+  fill: none;
+  stroke: #ECF7F9;
+  stroke-width: 1.185; }
+
+.st699 {
+  display: inline;
+  fill: none;
+  stroke: #93D6DD;
+  stroke-width: 1.185; }
+
+.st700 {
+  display: inline;
+  fill: none;
+  stroke: #9EDAE3;
+  stroke-width: 1.185; }
+
+.st701 {
+  display: inline;
+  fill: none;
+  stroke: #CFEBEE;
+  stroke-width: 1.185; }
+
+.st702 {
+  display: inline;
+  fill: none;
+  stroke: #F1F9FB;
+  stroke-width: 1.185; }
+
+.st703 {
+  display: inline;
+  fill: none;
+  stroke: #E3F3F7;
+  stroke-width: 1.185; }
+
+.st704 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDF2;
+  stroke-width: 1.185; }
+
+.st705 {
+  display: inline;
+  fill: none;
+  stroke: #7FD0DD;
+  stroke-width: 1.185; }
+
+.st706 {
+  display: inline;
+  fill: none;
+  stroke: #7ED0DE;
+  stroke-width: 1.185; }
+
+.st707 {
+  display: inline;
+  fill: none;
+  stroke: #E9F6F8;
+  stroke-width: 1.185; }
+
+.st708 {
+  display: inline;
+  fill: none;
+  stroke: #90D5E2;
+  stroke-width: 1.185; }
+
+.st709 {
+  display: inline;
+  fill: none;
+  stroke: #85D2DF;
+  stroke-width: 1.185; }
+
+.st710 {
+  display: inline;
+  fill: none;
+  stroke: #78CFDF;
+  stroke-width: 1.185; }
+
+.st711 {
+  display: inline;
+  fill: none;
+  stroke: #87D3E2;
+  stroke-width: 1.185; }
+
+.st712 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCEA;
+  stroke-width: 1.185; }
+
+.st713 {
+  display: inline;
+  fill: none;
+  stroke: #9EDBEA;
+  stroke-width: 1.185; }
+
+.st714 {
+  display: inline;
+  fill: none;
+  stroke: #82D2E4;
+  stroke-width: 1.185; }
+
+.st715 {
+  display: inline;
+  fill: none;
+  stroke: #88D4E4;
+  stroke-width: 1.185; }
+
+.st716 {
+  display: inline;
+  fill: none;
+  stroke: #98D9EA;
+  stroke-width: 1.185; }
+
+.st717 {
+  display: inline;
+  fill: none;
+  stroke: #79CFE0;
+  stroke-width: 1.185; }
+
+.st718 {
+  display: inline;
+  fill: none;
+  stroke: #77CFE0;
+  stroke-width: 1.185; }
+
+.st719 {
+  display: inline;
+  fill: none;
+  stroke: #94D8EE;
+  stroke-width: 1.185; }
+
+.st720 {
+  display: inline;
+  fill: none;
+  stroke: #7CD1E7;
+  stroke-width: 1.185; }
+
+.st721 {
+  display: inline;
+  fill: none;
+  stroke: #76CFE2;
+  stroke-width: 1.185; }
+
+.st722 {
+  display: inline;
+  fill: none;
+  stroke: #75CEE8;
+  stroke-width: 1.185; }
+
+.st723 {
+  display: inline;
+  fill: none;
+  stroke: #76CDE9;
+  stroke-width: 1.185; }
+
+.st724 {
+  display: inline;
+  fill: none;
+  stroke: #E8F5F7;
+  stroke-width: 1.185; }
+
+.st725 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6F9;
+  stroke-width: 1.185; }
+
+.st726 {
+  display: inline;
+  fill: none;
+  stroke: #F2FAFE;
+  stroke-width: 1.185; }
+
+.st727 {
+  display: inline;
+  fill: none;
+  stroke: #F4FBFD;
+  stroke-width: 1.185; }
+
+.st728 {
+  display: inline;
+  fill: none;
+  stroke: #B4E2EA;
+  stroke-width: 1.185; }
+
+.st729 {
+  display: inline;
+  fill: none;
+  stroke: #D2EDF3;
+  stroke-width: 1.185; }
+
+.st730 {
+  display: inline;
+  fill: none;
+  stroke: #B9E4EC;
+  stroke-width: 1.185; }
+
+.st731 {
+  display: inline;
+  fill: none;
+  stroke: #B0E0E9;
+  stroke-width: 1.185; }
+
+.st732 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCE7;
+  stroke-width: 1.185; }
+
+.st733 {
+  display: inline;
+  fill: none;
+  stroke: #75CEE3;
+  stroke-width: 1.185; }
+
+.st734 {
+  display: inline;
+  fill: none;
+  stroke: #7BD0E2;
+  stroke-width: 1.185; }
+
+.st735 {
+  display: inline;
+  fill: none;
+  stroke: #7ACFDF;
+  stroke-width: 1.185; }
+
+.st736 {
+  display: inline;
+  fill: none;
+  stroke: #91D6E4;
+  stroke-width: 1.185; }
+
+.st737 {
+  display: inline;
+  fill: none;
+  stroke: #7ED1E3;
+  stroke-width: 1.185; }
+
+.st738 {
+  display: inline;
+  fill: none;
+  stroke: #C0E6ED;
+  stroke-width: 1.185; }
+
+.st739 {
+  display: inline;
+  fill: none;
+  stroke: #A7DDE9;
+  stroke-width: 1.185; }
+
+.st740 {
+  display: inline;
+  fill: none;
+  stroke: #ADE0EC;
+  stroke-width: 1.185; }
+
+.st741 {
+  display: inline;
+  fill: none;
+  stroke: #A9DEEB;
+  stroke-width: 1.185; }
+
+.st742 {
+  display: inline;
+  fill: none;
+  stroke: #99D9EA;
+  stroke-width: 1.185; }
+
+.st743 {
+  display: inline;
+  fill: none;
+  stroke: #74CFE6;
+  stroke-width: 1.185; }
+
+.st744 {
+  display: inline;
+  fill: none;
+  stroke: #76CFE6;
+  stroke-width: 1.185; }
+
+.st745 {
+  display: inline;
+  fill: none;
+  stroke: #81D2E8;
+  stroke-width: 1.185; }
+
+.st746 {
+  display: inline;
+  fill: none;
+  stroke: #74CFE7;
+  stroke-width: 1.185; }
+
+.st747 {
+  display: inline;
+  fill: none;
+  stroke: #79CEE6;
+  stroke-width: 1.185; }
+
+.st748 {
+  display: inline;
+  fill: none;
+  stroke: #76CEE7;
+  stroke-width: 1.185; }
+
+.st749 {
+  display: inline;
+  fill: none;
+  stroke: #C2E7EF;
+  stroke-width: 1.185; }
+
+.st750 {
+  display: inline;
+  fill: none;
+  stroke: #D7EFF6;
+  stroke-width: 1.185; }
+
+.st751 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDF3;
+  stroke-width: 1.185; }
+
+.st752 {
+  display: inline;
+  fill: none;
+  stroke: #DFF2F8;
+  stroke-width: 1.185; }
+
+.st753 {
+  display: inline;
+  fill: none;
+  stroke: #ECF7FA;
+  stroke-width: 1.185; }
+
+.st754 {
+  display: inline;
+  fill: none;
+  stroke: #C5E8F1;
+  stroke-width: 1.185; }
+
+.st755 {
+  display: inline;
+  fill: none;
+  stroke: #C4E8F1;
+  stroke-width: 1.185; }
+
+.st756 {
+  display: inline;
+  fill: none;
+  stroke: #BAE4F0;
+  stroke-width: 1.185; }
+
+.st757 {
+  display: inline;
+  fill: none;
+  stroke: #7CCCE8;
+  stroke-width: 1.185; }
+
+.st758 {
+  display: inline;
+  fill: none;
+  stroke: #DEF2F7;
+  stroke-width: 1.185; }
+
+.st759 {
+  display: inline;
+  fill: none;
+  stroke: #92D2EA;
+  stroke-width: 1.185; }
+
+.st760 {
+  display: inline;
+  fill: none;
+  stroke: #98D3EC;
+  stroke-width: 1.185; }
+
+.st761 {
+  display: inline;
+  fill: none;
+  stroke: #8BCDEB;
+  stroke-width: 1.185; }
+
+.st762 {
+  display: inline;
+  fill: none;
+  stroke: #EFF8FB;
+  stroke-width: 1.185; }
+
+.st763 {
+  display: inline;
+  fill: none;
+  stroke: #B5E3F0;
+  stroke-width: 1.185; }
+
+.st764 {
+  display: inline;
+  fill: none;
+  stroke: #A9DEEF;
+  stroke-width: 1.185; }
+
+.st765 {
+  display: inline;
+  fill: none;
+  stroke: #C7E9F3;
+  stroke-width: 1.185; }
+
+.st766 {
+  display: inline;
+  fill: none;
+  stroke: #C5E8F2;
+  stroke-width: 1.185; }
+
+.st767 {
+  display: inline;
+  fill: none;
+  stroke: #D3EEF4;
+  stroke-width: 1.185; }
+
+.st768 {
+  display: inline;
+  fill: none;
+  stroke: #DEF2F9;
+  stroke-width: 1.185; }
+
+.st769 {
+  display: inline;
+  fill: none;
+  stroke: #CEECF5;
+  stroke-width: 1.185; }
+
+.st770 {
+  display: inline;
+  fill: none;
+  stroke: #E6F5FA;
+  stroke-width: 1.185; }
+
+.st771 {
+  display: inline;
+  fill: none;
+  stroke: #C5E8F3;
+  stroke-width: 1.185; }
+
+.st772 {
+  display: inline;
+  fill: none;
+  stroke: #C2E7F3;
+  stroke-width: 1.185; }
+
+.st773 {
+  display: inline;
+  fill: none;
+  stroke: #B6E2F2;
+  stroke-width: 1.185; }
+
+.st774 {
+  display: inline;
+  fill: none;
+  stroke: #AAD9EF;
+  stroke-width: 1.185; }
+
+.st775 {
+  display: inline;
+  fill: none;
+  stroke: #CEE9F5;
+  stroke-width: 1.185; }
+
+.st776 {
+  display: inline;
+  fill: none;
+  stroke: #E8F5FB;
+  stroke-width: 1.185; }
+
+.st777 {
+  display: inline;
+  fill: none;
+  stroke: #DEEEF8;
+  stroke-width: 1.185; }
+
+.st778 {
+  display: inline;
+  fill: none;
+  stroke: #D0E7F5;
+  stroke-width: 1.185; }
+
+.st779 {
+  display: inline;
+  fill: none;
+  stroke: #B8DEF1;
+  stroke-width: 1.185; }
+
+.st780 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6FB;
+  stroke-width: 1.185; }
+
+.st781 {
+  display: inline;
+  fill: none;
+  stroke: #B8DCF3;
+  stroke-width: 1.185; }
+
+.st782 {
+  display: inline;
+  fill: none;
+  stroke: #C7E2F6;
+  stroke-width: 1.185; }
+
+.st783 {
+  display: inline;
+  fill: none;
+  stroke: #C5DFF4;
+  stroke-width: 1.185; }
+
+.st784 {
+  display: inline;
+  fill: none;
+  stroke: #CDE3F6;
+  stroke-width: 1.185; }
+
+.st785 {
+  display: inline;
+  fill: none;
+  stroke: #D9E9F8;
+  stroke-width: 1.185; }
+
+.st786 {
+  display: inline;
+  fill: none;
+  stroke: #EBF7FC;
+  stroke-width: 1.185; }
+
+.st787 {
+  display: inline;
+  fill: none;
+  stroke: #E1EDF9;
+  stroke-width: 1.185; }
+
+.st788 {
+  display: inline;
+  fill: none;
+  stroke: #EBF4FB;
+  stroke-width: 1.185; }
+
+.st789 {
+  display: inline;
+  fill: none;
+  stroke: #EAF2FB;
+  stroke-width: 1.185; }
+
+.st790 {
+  display: inline;
+  fill: none;
+  stroke: #F6FCFE;
+  stroke-width: 1.185; }
+
+.st791 {
+  display: inline;
+  fill: none;
+  stroke: #F6FAFE;
+  stroke-width: 1.185; }
+
+.st792 {
+  display: inline;
+  fill: none;
+  stroke: #F3F9FD;
+  stroke-width: 1.185; }
+
+.st793 {
+  display: inline;
+  fill: none;
+  stroke: #F8EEF5;
+  stroke-width: 1.185; }
+
+.st794 {
+  display: inline;
+  fill: none;
+  stroke: #F4E2EF;
+  stroke-width: 1.185; }
+
+.st795 {
+  display: inline;
+  fill: none;
+  stroke: #F9F1F7;
+  stroke-width: 1.185; }
+
+.st796 {
+  display: inline;
+  fill: none;
+  stroke: #F7EDF5;
+  stroke-width: 1.185; }
+
+.st797 {
+  display: inline;
+  fill: none;
+  stroke: #FDFAFC;
+  stroke-width: 1.185; }
+
+.st798 {
+  display: inline;
+  fill: none;
+  stroke: #F5E5F0;
+  stroke-width: 1.185; }
+
+.st799 {
+  display: inline;
+  fill: none;
+  stroke: #EFD9E9;
+  stroke-width: 1.185; }
+
+.st800 {
+  display: inline;
+  fill: none;
+  stroke: #E9CAE1;
+  stroke-width: 1.185; }
+
+.st801 {
+  display: inline;
+  fill: none;
+  stroke: #F0D9E9;
+  stroke-width: 1.185; }
+
+.st802 {
+  display: inline;
+  fill: none;
+  stroke: #F8EBF3;
+  stroke-width: 1.185; }
+
+.st803 {
+  display: inline;
+  fill: none;
+  stroke: #F2DDEB;
+  stroke-width: 1.185; }
+
+.st804 {
+  display: inline;
+  fill: none;
+  stroke: #F2DDEC;
+  stroke-width: 1.185; }
+
+.st805 {
+  display: inline;
+  fill: none;
+  stroke: #F8EAF3;
+  stroke-width: 1.185; }
+
+.st806 {
+  display: inline;
+  fill: none;
+  stroke: #EACEE4;
+  stroke-width: 1.185; }
+
+.st807 {
+  display: inline;
+  fill: none;
+  stroke: #EDD4E7;
+  stroke-width: 1.185; }
+
+.st808 {
+  display: inline;
+  fill: none;
+  stroke: #DFB5D5;
+  stroke-width: 1.185; }
+
+.st809 {
+  display: inline;
+  fill: none;
+  stroke: #F3DDEC;
+  stroke-width: 1.185; }
+
+.st810 {
+  display: inline;
+  fill: none;
+  stroke: #F0D8E9;
+  stroke-width: 1.185; }
+
+.st811 {
+  display: inline;
+  fill: none;
+  stroke: #EAC8E0;
+  stroke-width: 1.185; }
+
+.st812 {
+  display: inline;
+  fill: none;
+  stroke: #E9C7DF;
+  stroke-width: 1.185; }
+
+.st813 {
+  display: inline;
+  fill: none;
+  stroke: #EAC9E0;
+  stroke-width: 1.185; }
+
+.st814 {
+  display: inline;
+  fill: none;
+  stroke: #E6BEDA;
+  stroke-width: 1.185; }
+
+.st815 {
+  display: inline;
+  fill: none;
+  stroke: #F1D8E9;
+  stroke-width: 1.185; }
+
+.st816 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFD;
+  stroke-width: 5.9248; }
+
+.st817 {
+  display: inline;
+  fill: none;
+  stroke: #FDF9FC;
+  stroke-width: 5.9248; }
+
+.st818 {
+  display: inline;
+  fill: none;
+  stroke: #FEF8FB;
+  stroke-width: 5.9248; }
+
+.st819 {
+  display: inline;
+  fill: none;
+  stroke: #F8EEF5;
+  stroke-width: 5.9248; }
+
+.st820 {
+  display: inline;
+  fill: none;
+  stroke: #F5E5F0;
+  stroke-width: 5.9248; }
+
+.st821 {
+  display: inline;
+  fill: none;
+  stroke: #F7E9F3;
+  stroke-width: 5.9248; }
+
+.st822 {
+  display: inline;
+  fill: none;
+  stroke: #F4E2EF;
+  stroke-width: 5.9248; }
+
+.st823 {
+  display: inline;
+  fill: none;
+  stroke: #EFD9E9;
+  stroke-width: 5.9248; }
+
+.st824 {
+  display: inline;
+  fill: none;
+  stroke: #E9CCE3;
+  stroke-width: 5.9248; }
+
+.st825 {
+  display: inline;
+  fill: none;
+  stroke: #E6C4DE;
+  stroke-width: 5.9248; }
+
+.st826 {
+  display: inline;
+  fill: none;
+  stroke: #F5E4F0;
+  stroke-width: 5.9248; }
+
+.st827 {
+  display: inline;
+  fill: none;
+  stroke: #EDD4E7;
+  stroke-width: 5.9248; }
+
+.st828 {
+  display: inline;
+  fill: none;
+  stroke: #E9C9E0;
+  stroke-width: 5.9248; }
+
+.st829 {
+  display: inline;
+  fill: none;
+  stroke: #E1B8D7;
+  stroke-width: 5.9248; }
+
+.st830 {
+  display: inline;
+  fill: none;
+  stroke: #DAA6CC;
+  stroke-width: 5.9248; }
+
+.st831 {
+  display: inline;
+  fill: none;
+  stroke: #E1B7D6;
+  stroke-width: 5.9248; }
+
+.st832 {
+  display: inline;
+  fill: none;
+  stroke: #E4C0DB;
+  stroke-width: 5.9248; }
+
+.st833 {
+  display: inline;
+  fill: none;
+  stroke: #DAA4CB;
+  stroke-width: 5.9248; }
+
+.st834 {
+  display: inline;
+  fill: none;
+  stroke: #DFB1D2;
+  stroke-width: 5.9248; }
+
+.st835 {
+  display: inline;
+  fill: none;
+  stroke: #E7C1DB;
+  stroke-width: 5.9248; }
+
+.st836 {
+  display: inline;
+  fill: none;
+  stroke: #F6E5F0;
+  stroke-width: 5.9248; }
+
+.st837 {
+  display: inline;
+  fill: none;
+  stroke: #F8EDF5;
+  stroke-width: 5.9248; }
+
+.st838 {
+  display: inline;
+  fill: none;
+  stroke: #FAF3F8;
+  stroke-width: 5.9248; }
+
+.st839 {
+  display: inline;
+  fill: none;
+  stroke: #FAF2F8;
+  stroke-width: 5.9248; }
+
+.st840 {
+  display: inline;
+  fill: none;
+  stroke: #D9A0C8;
+  stroke-width: 5.9248; }
+
+.st841 {
+  display: inline;
+  fill: none;
+  stroke: #DDA1C9;
+  stroke-width: 5.9248; }
+
+.st842 {
+  display: inline;
+  fill: none;
+  stroke: #EED2E5;
+  stroke-width: 5.9248; }
+
+.st843 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4F9;
+  stroke-width: 5.9248; }
+
+.st844 {
+  display: inline;
+  fill: none;
+  stroke: #FBF7FB;
+  stroke-width: 5.9248; }
+
+.st845 {
+  display: inline;
+  fill: none;
+  stroke: #E2AFD1;
+  stroke-width: 5.9248; }
+
+.st846 {
+  display: inline;
+  fill: none;
+  stroke: #DC99C4;
+  stroke-width: 5.9248; }
+
+.st847 {
+  display: inline;
+  fill: none;
+  stroke: #FAEFF6;
+  stroke-width: 5.9248; }
+
+.st848 {
+  display: inline;
+  fill: none;
+  stroke: #FCF3F8;
+  stroke-width: 5.9248; }
+
+.st849 {
+  display: inline;
+  fill: none;
+  stroke: #FAF0F7;
+  stroke-width: 5.9248; }
+
+.st850 {
+  display: inline;
+  fill: none;
+  stroke: #F0D4E6;
+  stroke-width: 5.9248; }
+
+.st851 {
+  display: inline;
+  fill: none;
+  stroke: #DB7FB4;
+  stroke-width: 5.9248; }
+
+.st852 {
+  display: inline;
+  fill: none;
+  stroke: #E9B9D6;
+  stroke-width: 5.9248; }
+
+.st853 {
+  display: inline;
+  fill: none;
+  stroke: #F5E1EE;
+  stroke-width: 5.9248; }
+
+.st854 {
+  display: inline;
+  fill: none;
+  stroke: #FBF6FA;
+  stroke-width: 5.9248; }
+
+.st855 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFD;
+  stroke-width: 5.9248; }
+
+.st856 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAFC;
+  stroke-width: 5.9248; }
+
+.st857 {
+  display: inline;
+  fill: none;
+  stroke: #F0CFE3;
+  stroke-width: 5.9248; }
+
+.st858 {
+  display: inline;
+  fill: none;
+  stroke: #EBB6CF;
+  stroke-width: 5.9248; }
+
+.st859 {
+  display: inline;
+  fill: none;
+  stroke: #E6ABCD;
+  stroke-width: 5.9248; }
+
+.st860 {
+  display: inline;
+  fill: none;
+  stroke: #E181AE;
+  stroke-width: 5.9248; }
+
+.st861 {
+  display: inline;
+  fill: none;
+  stroke: #DF799F;
+  stroke-width: 5.9248; }
+
+.st862 {
+  display: inline;
+  fill: none;
+  stroke: #EBB7CC;
+  stroke-width: 5.9248; }
+
+.st863 {
+  display: inline;
+  fill: none;
+  stroke: #E289AB;
+  stroke-width: 5.9248; }
+
+.st864 {
+  display: inline;
+  fill: none;
+  stroke: #FFFEFE;
+  stroke-width: 5.9248; }
+
+.st865 {
+  display: inline;
+  fill: none;
+  stroke: #F5E2EC;
+  stroke-width: 5.9248; }
+
+.st866 {
+  display: inline;
+  fill: none;
+  stroke: #F2D5E1;
+  stroke-width: 5.9248; }
+
+.st867 {
+  display: inline;
+  fill: none;
+  stroke: #E79CB5;
+  stroke-width: 5.9248; }
+
+.st868 {
+  display: inline;
+  fill: none;
+  stroke: #DF729A;
+  stroke-width: 5.9248; }
+
+.st869 {
+  display: inline;
+  fill: none;
+  stroke: #E26D86;
+  stroke-width: 5.9248; }
+
+.st870 {
+  display: inline;
+  fill: none;
+  stroke: #E9858D;
+  stroke-width: 5.9248; }
+
+.st871 {
+  display: inline;
+  fill: none;
+  stroke: #EB96A7;
+  stroke-width: 5.9248; }
+
+.st872 {
+  display: inline;
+  fill: none;
+  stroke: #F3D8E2;
+  stroke-width: 5.9248; }
+
+.st873 {
+  display: inline;
+  fill: none;
+  stroke: #FAEEF2;
+  stroke-width: 5.9248; }
+
+.st874 {
+  display: inline;
+  fill: none;
+  stroke: #F4DCE5;
+  stroke-width: 5.9248; }
+
+.st875 {
+  display: inline;
+  fill: none;
+  stroke: #EFC0CE;
+  stroke-width: 5.9248; }
+
+.st876 {
+  display: inline;
+  fill: none;
+  stroke: #F0C0CD;
+  stroke-width: 5.9248; }
+
+.st877 {
+  display: inline;
+  fill: none;
+  stroke: #FAF1F4;
+  stroke-width: 5.9248; }
+
+.st878 {
+  display: inline;
+  fill: none;
+  stroke: #EEB4C1;
+  stroke-width: 5.9248; }
+
+.st879 {
+  display: inline;
+  fill: none;
+  stroke: #F8E5E9;
+  stroke-width: 5.9248; }
+
+.st880 {
+  display: inline;
+  fill: none;
+  stroke: #F8E1E5;
+  stroke-width: 5.9248; }
+
+.st881 {
+  display: inline;
+  fill: none;
+  stroke: #F6D9DD;
+  stroke-width: 5.9248; }
+
+.st882 {
+  display: inline;
+  fill: none;
+  stroke: #EFA3A9;
+  stroke-width: 5.9248; }
+
+.st883 {
+  display: inline;
+  fill: none;
+  stroke: #EB8386;
+  stroke-width: 5.9248; }
+
+.st884 {
+  display: inline;
+  fill: none;
+  stroke: #F3B9B4;
+  stroke-width: 5.9248; }
+
+.st885 {
+  display: inline;
+  fill: none;
+  stroke: #F0B0B8;
+  stroke-width: 5.9248; }
+
+.st886 {
+  display: inline;
+  fill: none;
+  stroke: #F4B9B8;
+  stroke-width: 5.9248; }
+
+.st887 {
+  display: inline;
+  fill: none;
+  stroke: #F6C1B9;
+  stroke-width: 5.9248; }
+
+.st888 {
+  display: inline;
+  fill: none;
+  stroke: #F6C4BC;
+  stroke-width: 5.9248; }
+
+.st889 {
+  display: inline;
+  fill: none;
+  stroke: #F2BABC;
+  stroke-width: 5.9248; }
+
+.st890 {
+  display: inline;
+  fill: none;
+  stroke: #F5CED3;
+  stroke-width: 5.9248; }
+
+.st891 {
+  display: inline;
+  fill: none;
+  stroke: #F8DDDD;
+  stroke-width: 5.9248; }
+
+.st892 {
+  display: inline;
+  fill: none;
+  stroke: #FBF6F7;
+  stroke-width: 5.9248; }
+
+.st893 {
+  display: inline;
+  fill: none;
+  stroke: #F7DDE2;
+  stroke-width: 5.9248; }
+
+.st894 {
+  display: inline;
+  fill: none;
+  stroke: #FCF3F7;
+  stroke-width: 5.9248; }
+
+.st895 {
+  display: inline;
+  fill: none;
+  stroke: #FCEAEB;
+  stroke-width: 5.9248; }
+
+.st896 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4F7;
+  stroke-width: 5.9248; }
+
+.st897 {
+  display: inline;
+  fill: none;
+  stroke: #FBE2E0;
+  stroke-width: 5.9248; }
+
+.st898 {
+  display: inline;
+  fill: none;
+  stroke: #F6C0BD;
+  stroke-width: 5.9248; }
+
+.st899 {
+  display: inline;
+  fill: none;
+  stroke: #FAE4E0;
+  stroke-width: 5.9248; }
+
+.st900 {
+  display: inline;
+  fill: none;
+  stroke: #F7B189;
+  stroke-width: 5.9248; }
+
+.st901 {
+  display: inline;
+  fill: none;
+  stroke: #FBCDA9;
+  stroke-width: 5.9248; }
+
+.st902 {
+  display: inline;
+  fill: none;
+  stroke: #FBD1A3;
+  stroke-width: 5.9248; }
+
+.st903 {
+  display: inline;
+  fill: none;
+  stroke: #FCD0A4;
+  stroke-width: 5.9248; }
+
+.st904 {
+  display: inline;
+  fill: none;
+  stroke: #FAD5B9;
+  stroke-width: 5.9248; }
+
+.st905 {
+  display: inline;
+  fill: none;
+  stroke: #FEF3F2;
+  stroke-width: 5.9248; }
+
+.st906 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0E6;
+  stroke-width: 5.9248; }
+
+.st907 {
+  display: inline;
+  fill: none;
+  stroke: #FBD2A7;
+  stroke-width: 5.9248; }
+
+.st908 {
+  display: inline;
+  fill: none;
+  stroke: #FDE4CD;
+  stroke-width: 5.9248; }
+
+.st909 {
+  display: inline;
+  fill: none;
+  stroke: #FDE6D1;
+  stroke-width: 5.9248; }
+
+.st910 {
+  display: inline;
+  fill: none;
+  stroke: #FDECE3;
+  stroke-width: 5.9248; }
+
+.st911 {
+  display: inline;
+  fill: none;
+  stroke: #FEF4F4;
+  stroke-width: 5.9248; }
+
+.st912 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7F7;
+  stroke-width: 5.9248; }
+
+.st913 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F7;
+  stroke-width: 5.9248; }
+
+.st914 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFE6;
+  stroke-width: 5.9248; }
+
+.st915 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2E4;
+  stroke-width: 5.9248; }
+
+.st916 {
+  display: inline;
+  fill: none;
+  stroke: #FDE9D1;
+  stroke-width: 5.9248; }
+
+.st917 {
+  display: inline;
+  fill: none;
+  stroke: #FDE5C9;
+  stroke-width: 5.9248; }
+
+.st918 {
+  display: inline;
+  fill: none;
+  stroke: #FFD69F;
+  stroke-width: 5.9248; }
+
+.st919 {
+  display: inline;
+  fill: none;
+  stroke: #FFEAD0;
+  stroke-width: 5.9248; }
+
+.st920 {
+  display: inline;
+  fill: none;
+  stroke: #FFEED7;
+  stroke-width: 5.9248; }
+
+.st921 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2E1;
+  stroke-width: 5.9248; }
+
+.st922 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFDB;
+  stroke-width: 5.9248; }
+
+.st923 {
+  display: inline;
+  fill: none;
+  stroke: #FFE9C6;
+  stroke-width: 5.9248; }
+
+.st924 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFC;
+  stroke-width: 5.9248; }
+
+.st925 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4EC;
+  stroke-width: 5.9248; }
+
+.st926 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7F0;
+  stroke-width: 5.9248; }
+
+.st927 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFA;
+  stroke-width: 5.9248; }
+
+.st928 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3E8;
+  stroke-width: 5.9248; }
+
+.st929 {
+  display: inline;
+  fill: none;
+  stroke: #FFF6EE;
+  stroke-width: 5.9248; }
+
+.st930 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7ED;
+  stroke-width: 5.9248; }
+
+.st931 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3E6;
+  stroke-width: 5.9248; }
+
+.st932 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0D8;
+  stroke-width: 5.9248; }
+
+.st933 {
+  display: inline;
+  fill: none;
+  stroke: #FFECC7;
+  stroke-width: 5.9248; }
+
+.st934 {
+  display: inline;
+  fill: none;
+  stroke: #FFF4E3;
+  stroke-width: 5.9248; }
+
+.st935 {
+  display: inline;
+  fill: none;
+  stroke: #FFF2D8;
+  stroke-width: 5.9248; }
+
+.st936 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBF7;
+  stroke-width: 5.9248; }
+
+.st937 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F3;
+  stroke-width: 5.9248; }
+
+.st938 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F2;
+  stroke-width: 5.9248; }
+
+.st939 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3DE;
+  stroke-width: 5.9248; }
+
+.st940 {
+  display: inline;
+  fill: none;
+  stroke: #FFEBC1;
+  stroke-width: 5.9248; }
+
+.st941 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0CE;
+  stroke-width: 5.9248; }
+
+.st942 {
+  display: inline;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 5.9248; }
+
+.st943 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF6;
+  stroke-width: 5.9248; }
+
+.st944 {
+  display: inline;
+  fill: none;
+  stroke: #FAE4A1;
+  stroke-width: 5.9248; }
+
+.st945 {
+  display: inline;
+  fill: none;
+  stroke: #FEF2D7;
+  stroke-width: 5.9248; }
+
+.st946 {
+  display: inline;
+  fill: none;
+  stroke: #FEF4DE;
+  stroke-width: 5.9248; }
+
+.st947 {
+  display: inline;
+  fill: none;
+  stroke: #FEF6E4;
+  stroke-width: 5.9248; }
+
+.st948 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7E6;
+  stroke-width: 5.9248; }
+
+.st949 {
+  display: inline;
+  fill: none;
+  stroke: #FAEEC0;
+  stroke-width: 5.9248; }
+
+.st950 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3D3;
+  stroke-width: 5.9248; }
+
+.st951 {
+  display: inline;
+  fill: none;
+  stroke: #EAEEC0;
+  stroke-width: 5.9248; }
+
+.st952 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBEF;
+  stroke-width: 5.9248; }
+
+.st953 {
+  display: inline;
+  fill: none;
+  stroke: #F8F4D6;
+  stroke-width: 5.9248; }
+
+.st954 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF2;
+  stroke-width: 5.9248; }
+
+.st955 {
+  display: inline;
+  fill: none;
+  stroke: #FEF8EB;
+  stroke-width: 5.9248; }
+
+.st956 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBF3;
+  stroke-width: 5.9248; }
+
+.st957 {
+  display: inline;
+  fill: none;
+  stroke: #FBF8EB;
+  stroke-width: 5.9248; }
+
+.st958 {
+  display: inline;
+  fill: none;
+  stroke: #D3E9C7;
+  stroke-width: 5.9248; }
+
+.st959 {
+  display: inline;
+  fill: none;
+  stroke: #F0F8F2;
+  stroke-width: 5.9248; }
+
+.st960 {
+  display: inline;
+  fill: none;
+  stroke: #EFF7EB;
+  stroke-width: 5.9248; }
+
+.st961 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBF7;
+  stroke-width: 5.9248; }
+
+.st962 {
+  display: inline;
+  fill: none;
+  stroke: #F0F7EF;
+  stroke-width: 5.9248; }
+
+.st963 {
+  display: inline;
+  fill: none;
+  stroke: #FFFFFD;
+  stroke-width: 5.9248; }
+
+.st964 {
+  display: inline;
+  fill: none;
+  stroke: #FCFDFB;
+  stroke-width: 5.9248; }
+
+.st965 {
+  display: inline;
+  fill: none;
+  stroke: #F8FBF8;
+  stroke-width: 5.9248; }
+
+.st966 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFD;
+  stroke-width: 5.9248; }
+
+.st967 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFF;
+  stroke-width: 5.9248; }
+
+.st968 {
+  display: inline;
+  fill: none;
+  stroke: #FDFEFC;
+  stroke-width: 5.9248; }
+
+.st969 {
+  display: inline;
+  fill: none;
+  stroke: #F6FBFA;
+  stroke-width: 5.9248; }
+
+.st970 {
+  display: inline;
+  fill: none;
+  stroke: #F0F9F9;
+  stroke-width: 5.9248; }
+
+.st971 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFD;
+  stroke-width: 5.9248; }
+
+.st972 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFE;
+  stroke-width: 5.9248; }
+
+.st973 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFB;
+  stroke-width: 5.9248; }
+
+.st974 {
+  display: inline;
+  fill: none;
+  stroke: #FBFEFF;
+  stroke-width: 5.9248; }
+
+.st975 {
+  display: inline;
+  fill: none;
+  stroke: #F0F9FB;
+  stroke-width: 5.9248; }
+
+.st976 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFE;
+  stroke-width: 5.9248; }
+
+.st977 {
+  display: inline;
+  fill: none;
+  stroke: #EFF9FE;
+  stroke-width: 5.9248; }
+
+.st978 {
+  display: inline;
+  fill: none;
+  stroke: #EAF7FE;
+  stroke-width: 5.9248; }
+
+.st979 {
+  display: inline;
+  fill: none;
+  stroke: #FBFCFE;
+  stroke-width: 5.9248; }
+
+.st980 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFF;
+  stroke-width: 5.9248; }
+
+.st981 {
+  display: inline;
+  fill: none;
+  stroke: #E6F4FC;
+  stroke-width: 5.9248; }
+
+.st982 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6FD;
+  stroke-width: 5.9248; }
+
+.st983 {
+  display: inline;
+  fill: none;
+  stroke: #F2F7FC;
+  stroke-width: 5.9248; }
+
+.st984 {
+  display: inline;
+  fill: none;
+  stroke: #EFF8FD;
+  stroke-width: 5.9248; }
+
+.st985 {
+  display: inline;
+  fill: none;
+  stroke: #DDEEFA;
+  stroke-width: 5.9248; }
+
+.st986 {
+  display: inline;
+  fill: none;
+  stroke: #E8F2FB;
+  stroke-width: 5.9248; }
+
+.st987 {
+  display: inline;
+  fill: none;
+  stroke: #FAFCFE;
+  stroke-width: 5.9248; }
+
+.st988 {
+  display: inline;
+  fill: none;
+  stroke: #F7FBFE;
+  stroke-width: 5.9248; }
+
+.st989 {
+  display: inline;
+  fill: none;
+  stroke: #F4F8FD;
+  stroke-width: 5.9248; }
+
+.st990 {
+  display: inline;
+  fill: none;
+  stroke: #ECF3FB;
+  stroke-width: 5.9248; }
+
+.st991 {
+  display: inline;
+  fill: none;
+  stroke: #F2F6FC;
+  stroke-width: 5.9248; }
+
+.st992 {
+  display: inline;
+  fill: none;
+  stroke: #F6F8FC;
+  stroke-width: 5.9248; }
+
+.st993 {
+  display: inline;
+  fill: none;
+  stroke: #F8EBF3;
+  stroke-width: 5.9248; }
+
+.st994 {
+  display: inline;
+  fill: none;
+  stroke: #F2DDEB;
+  stroke-width: 5.9248; }
+
+.st995 {
+  display: inline;
+  fill: none;
+  stroke: #F3DEEC;
+  stroke-width: 5.9248; }
+
+.st996 {
+  display: inline;
+  fill: none;
+  stroke: #F0D8E9;
+  stroke-width: 5.9248; }
+
+.st997 {
+  display: inline;
+  fill: none;
+  stroke: #F3DDEC;
+  stroke-width: 5.9248; }
+
+.st998 {
+  display: inline;
+  fill: none;
+  stroke: #EAC8E0;
+  stroke-width: 5.9248; }
+
+.st999 {
+  display: inline;
+  fill: none;
+  stroke: #E5C1DC;
+  stroke-width: 5.9248; }
+
+.st1000 {
+  display: inline;
+  fill: none;
+  stroke: #E2BAD7;
+  stroke-width: 5.9248; }
+
+.st1001 {
+  display: inline;
+  fill: none;
+  stroke: #EAC9E0;
+  stroke-width: 5.9248; }
+
+.st1002 {
+  display: inline;
+  fill: none;
+  stroke: #F6E2EE;
+  stroke-width: 5.9248; }
+
+.st1003 {
+  display: inline;
+  fill: none;
+  stroke: #E6BEDA;
+  stroke-width: 5.9248; }
+
+.st1004 {
+  display: inline;
+  fill: none;
+  stroke: #EDC9E0;
+  stroke-width: 5.9248; }
+
+.st1005 {
+  display: inline;
+  fill: none;
+  stroke: #DDA0C8;
+  stroke-width: 5.9248; }
+
+.st1006 {
+  display: inline;
+  fill: none;
+  stroke: #F2D0E4;
+  stroke-width: 5.9248; }
+
+.st1007 {
+  display: inline;
+  fill: none;
+  stroke: #F6D9E8;
+  stroke-width: 5.9248; }
+
+.st1008 {
+  display: inline;
+  fill: none;
+  stroke: #F9EAF3;
+  stroke-width: 5.9248; }
+
+.st1009 {
+  display: inline;
+  fill: none;
+  stroke: #FCEFF5;
+  stroke-width: 5.9248; }
+
+.st1010 {
+  display: inline;
+  fill: none;
+  stroke: #D9A2C9;
+  stroke-width: 5.9248; }
+
+.st1011 {
+  display: inline;
+  fill: none;
+  stroke: #FBEEF5;
+  stroke-width: 5.9248; }
+
+.st1012 {
+  display: inline;
+  fill: none;
+  stroke: #E6B5D4;
+  stroke-width: 5.9248; }
+
+.st1013 {
+  display: inline;
+  fill: none;
+  stroke: #E6ADCF;
+  stroke-width: 5.9248; }
+
+.st1014 {
+  display: inline;
+  fill: none;
+  stroke: #DA9AC4;
+  stroke-width: 5.9248; }
+
+.st1015 {
+  display: inline;
+  fill: none;
+  stroke: #DE98C3;
+  stroke-width: 5.9248; }
+
+.st1016 {
+  display: inline;
+  fill: none;
+  stroke: #F6DAE9;
+  stroke-width: 5.9248; }
+
+.st1017 {
+  display: inline;
+  fill: none;
+  stroke: #F6CDE1;
+  stroke-width: 5.9248; }
+
+.st1018 {
+  display: inline;
+  fill: none;
+  stroke: #F8DEEB;
+  stroke-width: 5.9248; }
+
+.st1019 {
+  display: inline;
+  fill: none;
+  stroke: #FEF1F2;
+  stroke-width: 5.9248; }
+
+.st1020 {
+  display: inline;
+  fill: none;
+  stroke: #FADDE3;
+  stroke-width: 5.9248; }
+
+.st1021 {
+  display: inline;
+  fill: none;
+  stroke: #EEB7D4;
+  stroke-width: 5.9248; }
+
+.st1022 {
+  display: inline;
+  fill: none;
+  stroke: #DB99C4;
+  stroke-width: 5.9248; }
+
+.st1023 {
+  display: inline;
+  fill: none;
+  stroke: #DB86B8;
+  stroke-width: 5.9248; }
+
+.st1024 {
+  display: inline;
+  fill: none;
+  stroke: #DD95C1;
+  stroke-width: 5.9248; }
+
+.st1025 {
+  display: inline;
+  fill: none;
+  stroke: #E38CBB;
+  stroke-width: 5.9248; }
+
+.st1026 {
+  display: inline;
+  fill: none;
+  stroke: #E479B0;
+  stroke-width: 5.9248; }
+
+.st1027 {
+  display: inline;
+  fill: none;
+  stroke: #F1BDD7;
+  stroke-width: 5.9248; }
+
+.st1028 {
+  display: inline;
+  fill: none;
+  stroke: #F6C5D8;
+  stroke-width: 5.9248; }
+
+.st1029 {
+  display: inline;
+  fill: none;
+  stroke: #FADADA;
+  stroke-width: 5.9248; }
+
+.st1030 {
+  display: inline;
+  fill: none;
+  stroke: #FCE7E4;
+  stroke-width: 5.9248; }
+
+.st1031 {
+  display: inline;
+  fill: none;
+  stroke: #F29FB0;
+  stroke-width: 5.9248; }
+
+.st1032 {
+  display: inline;
+  fill: none;
+  stroke: #F2A3B0;
+  stroke-width: 5.9248; }
+
+.st1033 {
+  display: inline;
+  fill: none;
+  stroke: #F9CACF;
+  stroke-width: 5.9248; }
+
+.st1034 {
+  display: inline;
+  fill: none;
+  stroke: #EE8FAD;
+  stroke-width: 5.9248; }
+
+.st1035 {
+  display: inline;
+  fill: none;
+  stroke: #EA87AB;
+  stroke-width: 5.9248; }
+
+.st1036 {
+  display: inline;
+  fill: none;
+  stroke: #E16CA3;
+  stroke-width: 5.9248; }
+
+.st1037 {
+  display: inline;
+  fill: none;
+  stroke: #E36B98;
+  stroke-width: 5.9248; }
+
+.st1038 {
+  display: inline;
+  fill: none;
+  stroke: #ED787A;
+  stroke-width: 5.9248; }
+
+.st1039 {
+  display: inline;
+  fill: none;
+  stroke: #F8B8B5;
+  stroke-width: 5.9248; }
+
+.st1040 {
+  display: inline;
+  fill: none;
+  stroke: #F29B94;
+  stroke-width: 5.9248; }
+
+.st1041 {
+  display: inline;
+  fill: none;
+  stroke: #F7B9AA;
+  stroke-width: 5.9248; }
+
+.st1042 {
+  display: inline;
+  fill: none;
+  stroke: #FDE0C0;
+  stroke-width: 5.9248; }
+
+.st1043 {
+  display: inline;
+  fill: none;
+  stroke: #FFEACD;
+  stroke-width: 5.9248; }
+
+.st1044 {
+  display: inline;
+  fill: none;
+  stroke: #FDE5CE;
+  stroke-width: 5.9248; }
+
+.st1045 {
+  display: inline;
+  fill: none;
+  stroke: #FBCDC6;
+  stroke-width: 5.9248; }
+
+.st1046 {
+  display: inline;
+  fill: none;
+  stroke: #FBD1B5;
+  stroke-width: 5.9248; }
+
+.st1047 {
+  display: inline;
+  fill: none;
+  stroke: #FBC4B1;
+  stroke-width: 5.9248; }
+
+.st1048 {
+  display: inline;
+  fill: none;
+  stroke: #E06CA2;
+  stroke-width: 5.9248; }
+
+.st1049 {
+  display: inline;
+  fill: none;
+  stroke: #E0658B;
+  stroke-width: 5.9248; }
+
+.st1050 {
+  display: inline;
+  fill: none;
+  stroke: #E3678C;
+  stroke-width: 5.9248; }
+
+.st1051 {
+  display: inline;
+  fill: none;
+  stroke: #F6936B;
+  stroke-width: 5.9248; }
+
+.st1052 {
+  display: inline;
+  fill: none;
+  stroke: #FAAF76;
+  stroke-width: 5.9248; }
+
+.st1053 {
+  display: inline;
+  fill: none;
+  stroke: #FAA65C;
+  stroke-width: 5.9248; }
+
+.st1054 {
+  display: inline;
+  fill: none;
+  stroke: #FBD4AA;
+  stroke-width: 5.9248; }
+
+.st1055 {
+  display: inline;
+  fill: none;
+  stroke: #FBB464;
+  stroke-width: 5.9248; }
+
+.st1056 {
+  display: inline;
+  fill: none;
+  stroke: #FCC987;
+  stroke-width: 5.9248; }
+
+.st1057 {
+  display: inline;
+  fill: none;
+  stroke: #FFD9A2;
+  stroke-width: 5.9248; }
+
+.st1058 {
+  display: inline;
+  fill: none;
+  stroke: #E9686E;
+  stroke-width: 5.9248; }
+
+.st1059 {
+  display: inline;
+  fill: none;
+  stroke: #E97086;
+  stroke-width: 5.9248; }
+
+.st1060 {
+  display: inline;
+  fill: none;
+  stroke: #EE7964;
+  stroke-width: 5.9248; }
+
+.st1061 {
+  display: inline;
+  fill: none;
+  stroke: #F28660;
+  stroke-width: 5.9248; }
+
+.st1062 {
+  display: inline;
+  fill: none;
+  stroke: #F69075;
+  stroke-width: 5.9248; }
+
+.st1063 {
+  display: inline;
+  fill: none;
+  stroke: #F9A062;
+  stroke-width: 5.9248; }
+
+.st1064 {
+  display: inline;
+  fill: none;
+  stroke: #FCB459;
+  stroke-width: 5.9248; }
+
+.st1065 {
+  display: inline;
+  fill: none;
+  stroke: #FBB051;
+  stroke-width: 5.9248; }
+
+.st1066 {
+  display: inline;
+  fill: none;
+  stroke: #FBBC65;
+  stroke-width: 5.9248; }
+
+.st1067 {
+  display: inline;
+  fill: none;
+  stroke: #FEC76E;
+  stroke-width: 5.9248; }
+
+.st1068 {
+  display: inline;
+  fill: none;
+  stroke: #FFD995;
+  stroke-width: 5.9248; }
+
+.st1069 {
+  display: inline;
+  fill: none;
+  stroke: #FFDC92;
+  stroke-width: 5.9248; }
+
+.st1070 {
+  display: inline;
+  fill: none;
+  stroke: #EA6E70;
+  stroke-width: 5.9248; }
+
+.st1071 {
+  display: inline;
+  fill: none;
+  stroke: #ED7268;
+  stroke-width: 5.9248; }
+
+.st1072 {
+  display: inline;
+  fill: none;
+  stroke: #EC817A;
+  stroke-width: 5.9248; }
+
+.st1073 {
+  display: inline;
+  fill: none;
+  stroke: #EF948F;
+  stroke-width: 5.9248; }
+
+.st1074 {
+  display: inline;
+  fill: none;
+  stroke: #EF8170;
+  stroke-width: 5.9248; }
+
+.st1075 {
+  display: inline;
+  fill: none;
+  stroke: #F7A383;
+  stroke-width: 5.9248; }
+
+.st1076 {
+  display: inline;
+  fill: none;
+  stroke: #F6905F;
+  stroke-width: 5.9248; }
+
+.st1077 {
+  display: inline;
+  fill: none;
+  stroke: #FAAC72;
+  stroke-width: 5.9248; }
+
+.st1078 {
+  display: inline;
+  fill: none;
+  stroke: #FAA652;
+  stroke-width: 5.9248; }
+
+.st1079 {
+  display: inline;
+  fill: none;
+  stroke: #FAA95F;
+  stroke-width: 5.9248; }
+
+.st1080 {
+  display: inline;
+  fill: none;
+  stroke: #FBB578;
+  stroke-width: 5.9248; }
+
+.st1081 {
+  display: inline;
+  fill: none;
+  stroke: #FBB064;
+  stroke-width: 5.9248; }
+
+.st1082 {
+  display: inline;
+  fill: none;
+  stroke: #FCB355;
+  stroke-width: 5.9248; }
+
+.st1083 {
+  display: inline;
+  fill: none;
+  stroke: #FDBA51;
+  stroke-width: 5.9248; }
+
+.st1084 {
+  display: inline;
+  fill: none;
+  stroke: #FAAB51;
+  stroke-width: 5.9248; }
+
+.st1085 {
+  display: inline;
+  fill: none;
+  stroke: #FCB965;
+  stroke-width: 5.9248; }
+
+.st1086 {
+  display: inline;
+  fill: none;
+  stroke: #FCB450;
+  stroke-width: 5.9248; }
+
+.st1087 {
+  display: inline;
+  fill: none;
+  stroke: #FECB8D;
+  stroke-width: 5.9248; }
+
+.st1088 {
+  display: inline;
+  fill: none;
+  stroke: #FEC056;
+  stroke-width: 5.9248; }
+
+.st1089 {
+  display: inline;
+  fill: none;
+  stroke: #FFCC6E;
+  stroke-width: 5.9248; }
+
+.st1090 {
+  display: inline;
+  fill: none;
+  stroke: #FEC559;
+  stroke-width: 5.9248; }
+
+.st1091 {
+  display: inline;
+  fill: none;
+  stroke: #FDBD51;
+  stroke-width: 5.9248; }
+
+.st1092 {
+  display: inline;
+  fill: none;
+  stroke: #FDC061;
+  stroke-width: 5.9248; }
+
+.st1093 {
+  display: inline;
+  fill: none;
+  stroke: #FFC869;
+  stroke-width: 5.9248; }
+
+.st1094 {
+  display: inline;
+  fill: none;
+  stroke: #FFC95A;
+  stroke-width: 5.9248; }
+
+.st1095 {
+  display: inline;
+  fill: none;
+  stroke: #FED39D;
+  stroke-width: 5.9248; }
+
+.st1096 {
+  display: inline;
+  fill: none;
+  stroke: #FDBD5E;
+  stroke-width: 5.9248; }
+
+.st1097 {
+  display: inline;
+  fill: none;
+  stroke: #FECA80;
+  stroke-width: 5.9248; }
+
+.st1098 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE87;
+  stroke-width: 5.9248; }
+
+.st1099 {
+  display: inline;
+  fill: none;
+  stroke: #FFD698;
+  stroke-width: 5.9248; }
+
+.st1100 {
+  display: inline;
+  fill: none;
+  stroke: #FECB79;
+  stroke-width: 5.9248; }
+
+.st1101 {
+  display: inline;
+  fill: none;
+  stroke: #FFD28E;
+  stroke-width: 5.9248; }
+
+.st1102 {
+  display: inline;
+  fill: none;
+  stroke: #FFDA9C;
+  stroke-width: 5.9248; }
+
+.st1103 {
+  display: inline;
+  fill: none;
+  stroke: #FFDC8A;
+  stroke-width: 5.9248; }
+
+.st1104 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE66;
+  stroke-width: 5.9248; }
+
+.st1105 {
+  display: inline;
+  fill: none;
+  stroke: #FFD87A;
+  stroke-width: 5.9248; }
+
+.st1106 {
+  display: inline;
+  fill: none;
+  stroke: #FFD87D;
+  stroke-width: 5.9248; }
+
+.st1107 {
+  display: inline;
+  fill: none;
+  stroke: #FFEDBE;
+  stroke-width: 5.9248; }
+
+.st1108 {
+  display: inline;
+  fill: none;
+  stroke: #FDE398;
+  stroke-width: 5.9248; }
+
+.st1109 {
+  display: inline;
+  fill: none;
+  stroke: #FFD46B;
+  stroke-width: 5.9248; }
+
+.st1110 {
+  display: inline;
+  fill: none;
+  stroke: #FDDD81;
+  stroke-width: 5.9248; }
+
+.st1111 {
+  display: inline;
+  fill: none;
+  stroke: #FFD877;
+  stroke-width: 5.9248; }
+
+.st1112 {
+  display: inline;
+  fill: none;
+  stroke: #FFD065;
+  stroke-width: 5.9248; }
+
+.st1113 {
+  display: inline;
+  fill: none;
+  stroke: #FED56A;
+  stroke-width: 5.9248; }
+
+.st1114 {
+  display: inline;
+  fill: none;
+  stroke: #FFCE77;
+  stroke-width: 5.9248; }
+
+.st1115 {
+  display: inline;
+  fill: none;
+  stroke: #FFCD66;
+  stroke-width: 5.9248; }
+
+.st1116 {
+  display: inline;
+  fill: none;
+  stroke: #FFD782;
+  stroke-width: 5.9248; }
+
+.st1117 {
+  display: inline;
+  fill: none;
+  stroke: #FFD480;
+  stroke-width: 5.9248; }
+
+.st1118 {
+  display: inline;
+  fill: none;
+  stroke: #FFE1AC;
+  stroke-width: 5.9248; }
+
+.st1119 {
+  display: inline;
+  fill: none;
+  stroke: #FBE9AB;
+  stroke-width: 5.9248; }
+
+.st1120 {
+  display: inline;
+  fill: none;
+  stroke: #F7E289;
+  stroke-width: 5.9248; }
+
+.st1121 {
+  display: inline;
+  fill: none;
+  stroke: #FED572;
+  stroke-width: 5.9248; }
+
+.st1122 {
+  display: inline;
+  fill: none;
+  stroke: #FED87A;
+  stroke-width: 5.9248; }
+
+.st1123 {
+  display: inline;
+  fill: none;
+  stroke: #FBDA75;
+  stroke-width: 5.9248; }
+
+.st1124 {
+  display: inline;
+  fill: none;
+  stroke: #FEDF95;
+  stroke-width: 5.9248; }
+
+.st1125 {
+  display: inline;
+  fill: none;
+  stroke: #FBE4A0;
+  stroke-width: 5.9248; }
+
+.st1126 {
+  display: inline;
+  fill: none;
+  stroke: #FBDC7A;
+  stroke-width: 5.9248; }
+
+.st1127 {
+  display: inline;
+  fill: none;
+  stroke: #F2E48E;
+  stroke-width: 5.9248; }
+
+.st1128 {
+  display: inline;
+  fill: none;
+  stroke: #F7DF7D;
+  stroke-width: 5.9248; }
+
+.st1129 {
+  display: inline;
+  fill: none;
+  stroke: #F9DF83;
+  stroke-width: 5.9248; }
+
+.st1130 {
+  display: inline;
+  fill: none;
+  stroke: #FAEAB1;
+  stroke-width: 5.9248; }
+
+.st1131 {
+  display: inline;
+  fill: none;
+  stroke: #F4E391;
+  stroke-width: 5.9248; }
+
+.st1132 {
+  display: inline;
+  fill: none;
+  stroke: #F0E696;
+  stroke-width: 5.9248; }
+
+.st1133 {
+  display: inline;
+  fill: none;
+  stroke: #F9F3D5;
+  stroke-width: 5.9248; }
+
+.st1134 {
+  display: inline;
+  fill: none;
+  stroke: #EDECB7;
+  stroke-width: 5.9248; }
+
+.st1135 {
+  display: inline;
+  fill: none;
+  stroke: #EBE38B;
+  stroke-width: 5.9248; }
+
+.st1136 {
+  display: inline;
+  fill: none;
+  stroke: #E3E79C;
+  stroke-width: 5.9248; }
+
+.st1137 {
+  display: inline;
+  fill: none;
+  stroke: #EFE79A;
+  stroke-width: 5.9248; }
+
+.st1138 {
+  display: inline;
+  fill: none;
+  stroke: #EEE38A;
+  stroke-width: 5.9248; }
+
+.st1139 {
+  display: inline;
+  fill: none;
+  stroke: #EEEEBD;
+  stroke-width: 5.9248; }
+
+.st1140 {
+  display: inline;
+  fill: none;
+  stroke: #DEE9A5;
+  stroke-width: 5.9248; }
+
+.st1141 {
+  display: inline;
+  fill: none;
+  stroke: #D2E5A4;
+  stroke-width: 5.9248; }
+
+.st1142 {
+  display: inline;
+  fill: none;
+  stroke: #D0E398;
+  stroke-width: 5.9248; }
+
+.st1143 {
+  display: inline;
+  fill: none;
+  stroke: #EEF2CF;
+  stroke-width: 5.9248; }
+
+.st1144 {
+  display: inline;
+  fill: none;
+  stroke: #CDE3A4;
+  stroke-width: 5.9248; }
+
+.st1145 {
+  display: inline;
+  fill: none;
+  stroke: #DFEDC8;
+  stroke-width: 5.9248; }
+
+.st1146 {
+  display: inline;
+  fill: none;
+  stroke: #DEEDCD;
+  stroke-width: 5.9248; }
+
+.st1147 {
+  display: inline;
+  fill: none;
+  stroke: #BBDB97;
+  stroke-width: 5.9248; }
+
+.st1148 {
+  display: inline;
+  fill: none;
+  stroke: #AED79A;
+  stroke-width: 5.9248; }
+
+.st1149 {
+  display: inline;
+  fill: none;
+  stroke: #DDEED8;
+  stroke-width: 5.9248; }
+
+.st1150 {
+  display: inline;
+  fill: none;
+  stroke: #C5E1AB;
+  stroke-width: 5.9248; }
+
+.st1151 {
+  display: inline;
+  fill: none;
+  stroke: #BEDDA3;
+  stroke-width: 5.9248; }
+
+.st1152 {
+  display: inline;
+  fill: none;
+  stroke: #A9D69E;
+  stroke-width: 5.9248; }
+
+.st1153 {
+  display: inline;
+  fill: none;
+  stroke: #D3E9CD;
+  stroke-width: 5.9248; }
+
+.st1154 {
+  display: inline;
+  fill: none;
+  stroke: #B4DBAC;
+  stroke-width: 5.9248; }
+
+.st1155 {
+  display: inline;
+  fill: none;
+  stroke: #9BD2A3;
+  stroke-width: 5.9248; }
+
+.st1156 {
+  display: inline;
+  fill: none;
+  stroke: #ADD8A8;
+  stroke-width: 5.9248; }
+
+.st1157 {
+  display: inline;
+  fill: none;
+  stroke: #A0D5B2;
+  stroke-width: 5.9248; }
+
+.st1158 {
+  display: inline;
+  fill: none;
+  stroke: #9CD3A8;
+  stroke-width: 5.9248; }
+
+.st1159 {
+  display: inline;
+  fill: none;
+  stroke: #8BCEAA;
+  stroke-width: 5.9248; }
+
+.st1160 {
+  display: inline;
+  fill: none;
+  stroke: #8ECFAF;
+  stroke-width: 5.9248; }
+
+.st1161 {
+  display: inline;
+  fill: none;
+  stroke: #82CDB8;
+  stroke-width: 5.9248; }
+
+.st1162 {
+  display: inline;
+  fill: none;
+  stroke: #8ECFAE;
+  stroke-width: 5.9248; }
+
+.st1163 {
+  display: inline;
+  fill: none;
+  stroke: #9FD5BA;
+  stroke-width: 5.9248; }
+
+.st1164 {
+  display: inline;
+  fill: none;
+  stroke: #89CEB6;
+  stroke-width: 5.9248; }
+
+.st1165 {
+  display: inline;
+  fill: none;
+  stroke: #8AD0BE;
+  stroke-width: 5.9248; }
+
+.st1166 {
+  display: inline;
+  fill: none;
+  stroke: #A2D5AC;
+  stroke-width: 5.9248; }
+
+.st1167 {
+  display: inline;
+  fill: none;
+  stroke: #BDE1C8;
+  stroke-width: 5.9248; }
+
+.st1168 {
+  display: inline;
+  fill: none;
+  stroke: #ABDBCA;
+  stroke-width: 5.9248; }
+
+.st1169 {
+  display: inline;
+  fill: none;
+  stroke: #D3EBE1;
+  stroke-width: 5.9248; }
+
+.st1170 {
+  display: inline;
+  fill: none;
+  stroke: #CDEAE6;
+  stroke-width: 5.9248; }
+
+.st1171 {
+  display: inline;
+  fill: none;
+  stroke: #8ED2C5;
+  stroke-width: 5.9248; }
+
+.st1172 {
+  display: inline;
+  fill: none;
+  stroke: #89D1CC;
+  stroke-width: 5.9248; }
+
+.st1173 {
+  display: inline;
+  fill: none;
+  stroke: #8BD1CB;
+  stroke-width: 5.9248; }
+
+.st1174 {
+  display: inline;
+  fill: none;
+  stroke: #87D1CF;
+  stroke-width: 5.9248; }
+
+.st1175 {
+  display: inline;
+  fill: none;
+  stroke: #EEF8F5;
+  stroke-width: 5.9248; }
+
+.st1176 {
+  display: inline;
+  fill: none;
+  stroke: #8BD2CF;
+  stroke-width: 5.9248; }
+
+.st1177 {
+  display: inline;
+  fill: none;
+  stroke: #BDE4E6;
+  stroke-width: 5.9248; }
+
+.st1178 {
+  display: inline;
+  fill: none;
+  stroke: #80CFD4;
+  stroke-width: 5.9248; }
+
+.st1179 {
+  display: inline;
+  fill: none;
+  stroke: #93D6DD;
+  stroke-width: 5.9248; }
+
+.st1180 {
+  display: inline;
+  fill: none;
+  stroke: #7DCFDA;
+  stroke-width: 5.9248; }
+
+.st1181 {
+  display: inline;
+  fill: none;
+  stroke: #7ECFD8;
+  stroke-width: 5.9248; }
+
+.st1182 {
+  display: inline;
+  fill: none;
+  stroke: #80D1DC;
+  stroke-width: 5.9248; }
+
+.st1183 {
+  display: inline;
+  fill: none;
+  stroke: #94D7E3;
+  stroke-width: 5.9248; }
+
+.st1184 {
+  display: inline;
+  fill: none;
+  stroke: #95D6DC;
+  stroke-width: 5.9248; }
+
+.st1185 {
+  display: inline;
+  fill: none;
+  stroke: #BDE5EB;
+  stroke-width: 5.9248; }
+
+.st1186 {
+  display: inline;
+  fill: none;
+  stroke: #94D6DF;
+  stroke-width: 5.9248; }
+
+.st1187 {
+  display: inline;
+  fill: none;
+  stroke: #D6EEF3;
+  stroke-width: 5.9248; }
+
+.st1188 {
+  display: inline;
+  fill: none;
+  stroke: #B3E1E7;
+  stroke-width: 5.9248; }
+
+.st1189 {
+  display: inline;
+  fill: none;
+  stroke: #C0E6F0;
+  stroke-width: 5.9248; }
+
+.st1190 {
+  display: inline;
+  fill: none;
+  stroke: #DFF2F8;
+  stroke-width: 5.9248; }
+
+.st1191 {
+  display: inline;
+  fill: none;
+  stroke: #DAF1F8;
+  stroke-width: 5.9248; }
+
+.st1192 {
+  display: inline;
+  fill: none;
+  stroke: #E5F5FA;
+  stroke-width: 5.9248; }
+
+.st1193 {
+  display: inline;
+  fill: none;
+  stroke: #EDF8FE;
+  stroke-width: 5.9248; }
+
+.st1194 {
+  display: inline;
+  fill: none;
+  stroke: #B8E3ED;
+  stroke-width: 5.9248; }
+
+.st1195 {
+  display: inline;
+  fill: none;
+  stroke: #D9F0FA;
+  stroke-width: 5.9248; }
+
+.st1196 {
+  display: inline;
+  fill: none;
+  stroke: #B6E3F0;
+  stroke-width: 5.9248; }
+
+.st1197 {
+  display: inline;
+  fill: none;
+  stroke: #BCE6F3;
+  stroke-width: 5.9248; }
+
+.st1198 {
+  display: inline;
+  fill: none;
+  stroke: #ADE0EF;
+  stroke-width: 5.9248; }
+
+.st1199 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCEA;
+  stroke-width: 5.9248; }
+
+.st1200 {
+  display: inline;
+  fill: none;
+  stroke: #BBE5F1;
+  stroke-width: 5.9248; }
+
+.st1201 {
+  display: inline;
+  fill: none;
+  stroke: #87D3E2;
+  stroke-width: 5.9248; }
+
+.st1202 {
+  display: inline;
+  fill: none;
+  stroke: #98D9EA;
+  stroke-width: 5.9248; }
+
+.st1203 {
+  display: inline;
+  fill: none;
+  stroke: #97D9EC;
+  stroke-width: 5.9248; }
+
+.st1204 {
+  display: inline;
+  fill: none;
+  stroke: #82D2E4;
+  stroke-width: 5.9248; }
+
+.st1205 {
+  display: inline;
+  fill: none;
+  stroke: #7ED0DE;
+  stroke-width: 5.9248; }
+
+.st1206 {
+  display: inline;
+  fill: none;
+  stroke: #79CFE0;
+  stroke-width: 5.9248; }
+
+.st1207 {
+  display: inline;
+  fill: none;
+  stroke: #77CFE0;
+  stroke-width: 5.9248; }
+
+.st1208 {
+  display: inline;
+  fill: none;
+  stroke: #76CFE2;
+  stroke-width: 5.9248; }
+
+.st1209 {
+  display: inline;
+  fill: none;
+  stroke: #7CD1E7;
+  stroke-width: 5.9248; }
+
+.st1210 {
+  display: inline;
+  fill: none;
+  stroke: #91D6E4;
+  stroke-width: 5.9248; }
+
+.st1211 {
+  display: inline;
+  fill: none;
+  stroke: #75CEE3;
+  stroke-width: 5.9248; }
+
+.st1212 {
+  display: inline;
+  fill: none;
+  stroke: #7ED1E3;
+  stroke-width: 5.9248; }
+
+.st1213 {
+  display: inline;
+  fill: none;
+  stroke: #99D9EA;
+  stroke-width: 5.9248; }
+
+.st1214 {
+  display: inline;
+  fill: none;
+  stroke: #76CFE6;
+  stroke-width: 5.9248; }
+
+.st1215 {
+  display: inline;
+  fill: none;
+  stroke: #74CFE7;
+  stroke-width: 5.9248; }
+
+.st1216 {
+  display: inline;
+  fill: none;
+  stroke: #77CCE9;
+  stroke-width: 5.9248; }
+
+.st1217 {
+  display: inline;
+  fill: none;
+  stroke: #79CEE6;
+  stroke-width: 5.9248; }
+
+.st1218 {
+  display: inline;
+  fill: none;
+  stroke: #81D2E8;
+  stroke-width: 5.9248; }
+
+.st1219 {
+  display: inline;
+  fill: none;
+  stroke: #80D0E8;
+  stroke-width: 5.9248; }
+
+.st1220 {
+  display: inline;
+  fill: none;
+  stroke: #94D8EE;
+  stroke-width: 5.9248; }
+
+.st1221 {
+  display: inline;
+  fill: none;
+  stroke: #89D5EE;
+  stroke-width: 5.9248; }
+
+.st1222 {
+  display: inline;
+  fill: none;
+  stroke: #ABE0F4;
+  stroke-width: 5.9248; }
+
+.st1223 {
+  display: inline;
+  fill: none;
+  stroke: #8BD5F0;
+  stroke-width: 5.9248; }
+
+.st1224 {
+  display: inline;
+  fill: none;
+  stroke: #D1EDF9;
+  stroke-width: 5.9248; }
+
+.st1225 {
+  display: inline;
+  fill: none;
+  stroke: #D9F0FB;
+  stroke-width: 5.9248; }
+
+.st1226 {
+  display: inline;
+  fill: none;
+  stroke: #C8EAFA;
+  stroke-width: 5.9248; }
+
+.st1227 {
+  display: inline;
+  fill: none;
+  stroke: #B0E2F5;
+  stroke-width: 5.9248; }
+
+.st1228 {
+  display: inline;
+  fill: none;
+  stroke: #92D2EA;
+  stroke-width: 5.9248; }
+
+.st1229 {
+  display: inline;
+  fill: none;
+  stroke: #B6E2F2;
+  stroke-width: 5.9248; }
+
+.st1230 {
+  display: inline;
+  fill: none;
+  stroke: #DAEEF7;
+  stroke-width: 5.9248; }
+
+.st1231 {
+  display: inline;
+  fill: none;
+  stroke: #82CCED;
+  stroke-width: 5.9248; }
+
+.st1232 {
+  display: inline;
+  fill: none;
+  stroke: #7CCCE8;
+  stroke-width: 5.9248; }
+
+.st1233 {
+  display: inline;
+  fill: none;
+  stroke: #98D3EC;
+  stroke-width: 5.9248; }
+
+.st1234 {
+  display: inline;
+  fill: none;
+  stroke: #8BCDEB;
+  stroke-width: 5.9248; }
+
+.st1235 {
+  display: inline;
+  fill: none;
+  stroke: #ADE1F4;
+  stroke-width: 5.9248; }
+
+.st1236 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCF8;
+  stroke-width: 5.9248; }
+
+.st1237 {
+  display: inline;
+  fill: none;
+  stroke: #9DD5F4;
+  stroke-width: 5.9248; }
+
+.st1238 {
+  display: inline;
+  fill: none;
+  stroke: #99D1F1;
+  stroke-width: 5.9248; }
+
+.st1239 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDFB;
+  stroke-width: 5.9248; }
+
+.st1240 {
+  display: inline;
+  fill: none;
+  stroke: #DDF1FC;
+  stroke-width: 5.9248; }
+
+.st1241 {
+  display: inline;
+  fill: none;
+  stroke: #B9E5FB;
+  stroke-width: 5.9248; }
+
+.st1242 {
+  display: inline;
+  fill: none;
+  stroke: #C2E6F9;
+  stroke-width: 5.9248; }
+
+.st1243 {
+  display: inline;
+  fill: none;
+  stroke: #B3DEF6;
+  stroke-width: 5.9248; }
+
+.st1244 {
+  display: inline;
+  fill: none;
+  stroke: #DFF1FC;
+  stroke-width: 5.9248; }
+
+.st1245 {
+  display: inline;
+  fill: none;
+  stroke: #CCE7F9;
+  stroke-width: 5.9248; }
+
+.st1246 {
+  display: inline;
+  fill: none;
+  stroke: #B7DEF6;
+  stroke-width: 5.9248; }
+
+.st1247 {
+  display: inline;
+  fill: none;
+  stroke: #B6DDF5;
+  stroke-width: 5.9248; }
+
+.st1248 {
+  display: inline;
+  fill: none;
+  stroke: #DDEDFA;
+  stroke-width: 5.9248; }
+
+.st1249 {
+  display: inline;
+  fill: none;
+  stroke: #91CCF0;
+  stroke-width: 5.9248; }
+
+.st1250 {
+  display: inline;
+  fill: none;
+  stroke: #9DD0F0;
+  stroke-width: 5.9248; }
+
+.st1251 {
+  display: inline;
+  fill: none;
+  stroke: #96CDEE;
+  stroke-width: 5.9248; }
+
+.st1252 {
+  display: inline;
+  fill: none;
+  stroke: #A8D4F1;
+  stroke-width: 5.9248; }
+
+.st1253 {
+  display: inline;
+  fill: none;
+  stroke: #AAD9EF;
+  stroke-width: 5.9248; }
+
+.st1254 {
+  display: inline;
+  fill: none;
+  stroke: #B8DCF3;
+  stroke-width: 5.9248; }
+
+.st1255 {
+  display: inline;
+  fill: none;
+  stroke: #D9E9F8;
+  stroke-width: 5.9248; }
+
+.st1256 {
+  display: inline;
+  fill: none;
+  stroke: #E1EDF9;
+  stroke-width: 5.9248; }
+
+.st1257 {
+  display: inline;
+  fill: none;
+  stroke: #C2DFF5;
+  stroke-width: 5.9248; }
+
+.st1258 {
+  display: inline;
+  fill: none;
+  stroke: #C7E2F6;
+  stroke-width: 5.9248; }
+
+.st1259 {
+  display: inline;
+  fill: none;
+  stroke: #C5DFF4;
+  stroke-width: 5.9248; }
+
+.st1260 {
+  display: inline;
+  fill: none;
+  stroke: #C4DFF5;
+  stroke-width: 5.9248; }
+
+.st1261 {
+  display: inline;
+  fill: none;
+  stroke: #AED8F3;
+  stroke-width: 5.9248; }
+
+.st1262 {
+  display: inline;
+  fill: none;
+  stroke: #B1D7F2;
+  stroke-width: 5.9248; }
+
+.st1263 {
+  display: inline;
+  fill: none;
+  stroke: #B0D6F1;
+  stroke-width: 5.9248; }
+
+.st1264 {
+  display: inline;
+  fill: none;
+  stroke: #B9D9F2;
+  stroke-width: 5.9248; }
+
+.st1265 {
+  display: inline;
+  fill: none;
+  stroke: #DEEAF8;
+  stroke-width: 5.9248; }
+
+.st1266 {
+  display: inline;
+  fill: none;
+  stroke: #E8F0FA;
+  stroke-width: 5.9248; }
+
+.st1267 {
+  display: inline;
+  fill: none;
+  stroke: #DAECF9;
+  stroke-width: 5.9248; }
+
+.st1268 {
+  display: inline;
+  fill: none;
+  stroke: #D3E8F8;
+  stroke-width: 5.9248; }
+
+.st1269 {
+  display: inline;
+  fill: none;
+  stroke: #C8E1F5;
+  stroke-width: 5.9248; }
+
+.st1270 {
+  display: inline;
+  fill: none;
+  stroke: #BDDBF3;
+  stroke-width: 5.9248; }
+
+.st1271 {
+  display: inline;
+  fill: none;
+  stroke: #C7E0F5;
+  stroke-width: 5.9248; }
+
+.st1272 {
+  display: inline;
+  fill: none;
+  stroke: #DFEBF8;
+  stroke-width: 5.9248; }
+
+.st1273 {
+  display: inline;
+  fill: none;
+  stroke: #E7F1FA;
+  stroke-width: 5.9248; }
+
+.st1274 {
+  display: inline;
+  fill: none;
+  stroke: #E7F0FA;
+  stroke-width: 5.9248; }
+
+.st1275 {
+  display: inline;
+  fill: none;
+  stroke: #EFF4FB;
+  stroke-width: 5.9248; }
+
+.st1276 {
+  display: inline;
+  fill: none;
+  stroke: #F5F8FD;
+  stroke-width: 5.9248; }
+
+.st1277 {
+  display: inline;
+  fill: none;
+  stroke: #F7F9FD;
+  stroke-width: 5.9248; }
+
+.st1278 {
+  display: inline;
+  fill: none;
+  stroke: #F1F6FC;
+  stroke-width: 5.9248; }
+
+.st1279 {
+  display: inline;
+  fill: none;
+  stroke: #F3F7FC;
+  stroke-width: 5.9248; }
+
+.st1280 {
+  display: inline;
+  fill: none;
+  stroke: #CBE2F5;
+  stroke-width: 5.9248; }
+
+.st1281 {
+  display: inline;
+  fill: none;
+  stroke: #DEECF9;
+  stroke-width: 5.9248; }
+
+.st1282 {
+  display: inline;
+  fill: none;
+  stroke: #D5E6F6;
+  stroke-width: 5.9248; }
+
+.st1283 {
+  display: inline;
+  fill: none;
+  stroke: #DFECF9;
+  stroke-width: 5.9248; }
+
+.st1284 {
+  display: inline;
+  fill: none;
+  stroke: #D6E8F7;
+  stroke-width: 5.9248; }
+
+.st1285 {
+  display: inline;
+  fill: none;
+  stroke: #F0F5FC;
+  stroke-width: 5.9248; }
+
+.st1286 {
+  display: inline;
+  fill: none;
+  stroke: #E3EEF9;
+  stroke-width: 5.9248; }
+
+.st1287 {
+  display: inline;
+  fill: none;
+  stroke: #EFF6FC;
+  stroke-width: 5.9248; }
+
+.st1288 {
+  display: inline;
+  fill: none;
+  stroke: #FAFAFD;
+  stroke-width: 5.9248; }
+
+.st1289 {
+  display: inline;
+  fill: none;
+  stroke: #FDFAFC;
+  stroke-width: 5.9248; }
+
+.st1290 {
+  display: inline;
+  fill: none;
+  stroke: #F1D8E9;
+  stroke-width: 5.9248; }
+
+.st1291 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7FA;
+  stroke-width: 5.9248; }
+
+.st1292 {
+  display: inline;
+  fill: none;
+  stroke: #FCEFF4;
+  stroke-width: 5.9248; }
+
+.st1293 {
+  display: inline;
+  fill: none;
+  stroke: #FEF7F9;
+  stroke-width: 5.9248; }
+
+.st1294 {
+  display: inline;
+  fill: none;
+  stroke: #FFFBFB;
+  stroke-width: 5.9248; }
+
+.st1295 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAFA;
+  stroke-width: 5.9248; }
+
+.st1296 {
+  display: inline;
+  fill: none;
+  stroke: #FEE6D8;
+  stroke-width: 5.9248; }
+
+.st1297 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF5;
+  stroke-width: 5.9248; }
+
+.st1298 {
+  display: inline;
+  fill: none;
+  stroke: #FFF8F1;
+  stroke-width: 5.9248; }
+
+.st1299 {
+  display: inline;
+  fill: none;
+  stroke: #FFF7EE;
+  stroke-width: 5.9248; }
+
+.st1300 {
+  display: inline;
+  fill: none;
+  stroke: #FFF0DD;
+  stroke-width: 5.9248; }
+
+.st1301 {
+  display: inline;
+  fill: none;
+  stroke: #FFE7C0;
+  stroke-width: 5.9248; }
+
+.st1302 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAF3;
+  stroke-width: 5.9248; }
+
+.st1303 {
+  display: inline;
+  fill: none;
+  stroke: #FFF3E0;
+  stroke-width: 5.9248; }
+
+.st1304 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCFA;
+  stroke-width: 5.9248; }
+
+.st1305 {
+  display: inline;
+  fill: none;
+  stroke: #FEF2D9;
+  stroke-width: 5.9248; }
+
+.st1306 {
+  display: inline;
+  fill: none;
+  stroke: #FFE8B7;
+  stroke-width: 5.9248; }
+
+.st1307 {
+  display: inline;
+  fill: none;
+  stroke: #FEF3DA;
+  stroke-width: 5.9248; }
+
+.st1308 {
+  display: inline;
+  fill: none;
+  stroke: #FFFCF8;
+  stroke-width: 5.9248; }
+
+.st1309 {
+  display: inline;
+  fill: none;
+  stroke: #FFEFC1;
+  stroke-width: 5.9248; }
+
+.st1310 {
+  display: inline;
+  fill: none;
+  stroke: #FFFAEF;
+  stroke-width: 5.9248; }
+
+.st1311 {
+  display: inline;
+  fill: none;
+  stroke: #FDF5DD;
+  stroke-width: 5.9248; }
+
+.st1312 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDF8;
+  stroke-width: 5.9248; }
+
+.st1313 {
+  display: inline;
+  fill: none;
+  stroke: #FCF1C6;
+  stroke-width: 5.9248; }
+
+.st1314 {
+  display: inline;
+  fill: none;
+  stroke: #F9E6A0;
+  stroke-width: 5.9248; }
+
+.st1315 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDFB;
+  stroke-width: 5.9248; }
+
+.st1316 {
+  display: inline;
+  fill: none;
+  stroke: #FFFDF9;
+  stroke-width: 5.9248; }
+
+.st1317 {
+  display: inline;
+  fill: none;
+  stroke: #FCF4D6;
+  stroke-width: 5.9248; }
+
+.st1318 {
+  display: inline;
+  fill: none;
+  stroke: #FBFAED;
+  stroke-width: 5.9248; }
+
+.st1319 {
+  display: inline;
+  fill: none;
+  stroke: #F7F1C5;
+  stroke-width: 5.9248; }
+
+.st1320 {
+  display: inline;
+  fill: none;
+  stroke: #FAF2CE;
+  stroke-width: 5.9248; }
+
+.st1321 {
+  display: inline;
+  fill: none;
+  stroke: #F3F0C1;
+  stroke-width: 5.9248; }
+
+.st1322 {
+  display: inline;
+  fill: none;
+  stroke: #FAFAEE;
+  stroke-width: 5.9248; }
+
+.st1323 {
+  display: inline;
+  fill: none;
+  stroke: #FAFCF8;
+  stroke-width: 5.9248; }
+
+.st1324 {
+  display: inline;
+  fill: none;
+  stroke: #F2F4D9;
+  stroke-width: 5.9248; }
+
+.st1325 {
+  display: inline;
+  fill: none;
+  stroke: #EAEAAE;
+  stroke-width: 5.9248; }
+
+.st1326 {
+  display: inline;
+  fill: none;
+  stroke: #EAF2CD;
+  stroke-width: 5.9248; }
+
+.st1327 {
+  display: inline;
+  fill: none;
+  stroke: #FAFBF6;
+  stroke-width: 5.9248; }
+
+.st1328 {
+  display: inline;
+  fill: none;
+  stroke: #F2F8E7;
+  stroke-width: 5.9248; }
+
+.st1329 {
+  display: inline;
+  fill: none;
+  stroke: #DCEBBD;
+  stroke-width: 5.9248; }
+
+.st1330 {
+  display: inline;
+  fill: none;
+  stroke: #EFF6E2;
+  stroke-width: 5.9248; }
+
+.st1331 {
+  display: inline;
+  fill: none;
+  stroke: #DFEAAD;
+  stroke-width: 5.9248; }
+
+.st1332 {
+  display: inline;
+  fill: none;
+  stroke: #F5FAF2;
+  stroke-width: 5.9248; }
+
+.st1333 {
+  display: inline;
+  fill: none;
+  stroke: #EAF4E0;
+  stroke-width: 5.9248; }
+
+.st1334 {
+  display: inline;
+  fill: none;
+  stroke: #D3E7B7;
+  stroke-width: 5.9248; }
+
+.st1335 {
+  display: inline;
+  fill: none;
+  stroke: #F0F7ED;
+  stroke-width: 5.9248; }
+
+.st1336 {
+  display: inline;
+  fill: none;
+  stroke: #E8F3E3;
+  stroke-width: 5.9248; }
+
+.st1337 {
+  display: inline;
+  fill: none;
+  stroke: #D8EBCE;
+  stroke-width: 5.9248; }
+
+.st1338 {
+  display: inline;
+  fill: none;
+  stroke: #F0F8F1;
+  stroke-width: 5.9248; }
+
+.st1339 {
+  display: inline;
+  fill: none;
+  stroke: #EBF5EA;
+  stroke-width: 5.9248; }
+
+.st1340 {
+  display: inline;
+  fill: none;
+  stroke: #F4F9F3;
+  stroke-width: 5.9248; }
+
+.st1341 {
+  display: inline;
+  fill: none;
+  stroke: #FAFDFC;
+  stroke-width: 5.9248; }
+
+.st1342 {
+  display: inline;
+  fill: none;
+  stroke: #E4F2E6;
+  stroke-width: 5.9248; }
+
+.st1343 {
+  display: inline;
+  fill: none;
+  stroke: #BBDFBE;
+  stroke-width: 5.9248; }
+
+.st1344 {
+  display: inline;
+  fill: none;
+  stroke: #BFE2CD;
+  stroke-width: 5.9248; }
+
+.st1345 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFC;
+  stroke-width: 5.9248; }
+
+.st1346 {
+  display: inline;
+  fill: none;
+  stroke: #D3EAD7;
+  stroke-width: 5.9248; }
+
+.st1347 {
+  display: inline;
+  fill: none;
+  stroke: #E1F1E7;
+  stroke-width: 5.9248; }
+
+.st1348 {
+  display: inline;
+  fill: none;
+  stroke: #D3EBDD;
+  stroke-width: 5.9248; }
+
+.st1349 {
+  display: inline;
+  fill: none;
+  stroke: #E8F4EF;
+  stroke-width: 5.9248; }
+
+.st1350 {
+  display: inline;
+  fill: none;
+  stroke: #B5DFCC;
+  stroke-width: 5.9248; }
+
+.st1351 {
+  display: inline;
+  fill: none;
+  stroke: #A7DACA;
+  stroke-width: 5.9248; }
+
+.st1352 {
+  display: inline;
+  fill: none;
+  stroke: #FCFDFD;
+  stroke-width: 5.9248; }
+
+.st1353 {
+  display: inline;
+  fill: none;
+  stroke: #EAF6F2;
+  stroke-width: 5.9248; }
+
+.st1354 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAF9;
+  stroke-width: 5.9248; }
+
+.st1355 {
+  display: inline;
+  fill: none;
+  stroke: #DCF0EC;
+  stroke-width: 5.9248; }
+
+.st1356 {
+  display: inline;
+  fill: none;
+  stroke: #C7E7E1;
+  stroke-width: 5.9248; }
+
+.st1357 {
+  display: inline;
+  fill: none;
+  stroke: #E5F4F1;
+  stroke-width: 5.9248; }
+
+.st1358 {
+  display: inline;
+  fill: none;
+  stroke: #F2FAFA;
+  stroke-width: 5.9248; }
+
+.st1359 {
+  display: inline;
+  fill: none;
+  stroke: #C8E8E4;
+  stroke-width: 5.9248; }
+
+.st1360 {
+  display: inline;
+  fill: none;
+  stroke: #DBF0EF;
+  stroke-width: 5.9248; }
+
+.st1361 {
+  display: inline;
+  fill: none;
+  stroke: #EBF7F8;
+  stroke-width: 5.9248; }
+
+.st1362 {
+  display: inline;
+  fill: none;
+  stroke: #D0ECED;
+  stroke-width: 5.9248; }
+
+.st1363 {
+  display: inline;
+  fill: none;
+  stroke: #A9DCD6;
+  stroke-width: 5.9248; }
+
+.st1364 {
+  display: inline;
+  fill: none;
+  stroke: #C4E7EA;
+  stroke-width: 5.9248; }
+
+.st1365 {
+  display: inline;
+  fill: none;
+  stroke: #F7FCFD;
+  stroke-width: 5.9248; }
+
+.st1366 {
+  display: inline;
+  fill: none;
+  stroke: #F3FAFA;
+  stroke-width: 5.9248; }
+
+.st1367 {
+  display: inline;
+  fill: none;
+  stroke: #F4FAFB;
+  stroke-width: 5.9248; }
+
+.st1368 {
+  display: inline;
+  fill: none;
+  stroke: #A0D9D8;
+  stroke-width: 5.9248; }
+
+.st1369 {
+  display: inline;
+  fill: none;
+  stroke: #96D6D8;
+  stroke-width: 5.9248; }
+
+.st1370 {
+  display: inline;
+  fill: none;
+  stroke: #8ED4D8;
+  stroke-width: 5.9248; }
+
+.st1371 {
+  display: inline;
+  fill: none;
+  stroke: #B6E2E2;
+  stroke-width: 5.9248; }
+
+.st1372 {
+  display: inline;
+  fill: none;
+  stroke: #F1F9FB;
+  stroke-width: 5.9248; }
+
+.st1373 {
+  display: inline;
+  fill: none;
+  stroke: #CFEBEE;
+  stroke-width: 5.9248; }
+
+.st1374 {
+  display: inline;
+  fill: none;
+  stroke: #ECF7F9;
+  stroke-width: 5.9248; }
+
+.st1375 {
+  display: inline;
+  fill: none;
+  stroke: #E9F6F8;
+  stroke-width: 5.9248; }
+
+.st1376 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDF2;
+  stroke-width: 5.9248; }
+
+.st1377 {
+  display: inline;
+  fill: none;
+  stroke: #E8F5F7;
+  stroke-width: 5.9248; }
+
+.st1378 {
+  display: inline;
+  fill: none;
+  stroke: #F4FBFD;
+  stroke-width: 5.9248; }
+
+.st1379 {
+  display: inline;
+  fill: none;
+  stroke: #B4E2EA;
+  stroke-width: 5.9248; }
+
+.st1380 {
+  display: inline;
+  fill: none;
+  stroke: #90D5E2;
+  stroke-width: 5.9248; }
+
+.st1381 {
+  display: inline;
+  fill: none;
+  stroke: #8AD4E2;
+  stroke-width: 5.9248; }
+
+.st1382 {
+  display: inline;
+  fill: none;
+  stroke: #D2EDF3;
+  stroke-width: 5.9248; }
+
+.st1383 {
+  display: inline;
+  fill: none;
+  stroke: #D7EFF6;
+  stroke-width: 5.9248; }
+
+.st1384 {
+  display: inline;
+  fill: none;
+  stroke: #A4DCE7;
+  stroke-width: 5.9248; }
+
+.st1385 {
+  display: inline;
+  fill: none;
+  stroke: #C0E6ED;
+  stroke-width: 5.9248; }
+
+.st1386 {
+  display: inline;
+  fill: none;
+  stroke: #C2E7EF;
+  stroke-width: 5.9248; }
+
+.st1387 {
+  display: inline;
+  fill: none;
+  stroke: #A7DDE9;
+  stroke-width: 5.9248; }
+
+.st1388 {
+  display: inline;
+  fill: none;
+  stroke: #ECF7FA;
+  stroke-width: 5.9248; }
+
+.st1389 {
+  display: inline;
+  fill: none;
+  stroke: #C5E8F1;
+  stroke-width: 5.9248; }
+
+.st1390 {
+  display: inline;
+  fill: none;
+  stroke: #EFF8FB;
+  stroke-width: 5.9248; }
+
+.st1391 {
+  display: inline;
+  fill: none;
+  stroke: #D3EEF4;
+  stroke-width: 5.9248; }
+
+.st1392 {
+  display: inline;
+  fill: none;
+  stroke: #D3EDF3;
+  stroke-width: 5.9248; }
+
+.st1393 {
+  display: inline;
+  fill: none;
+  stroke: #9AD9E8;
+  stroke-width: 5.9248; }
+
+.st1394 {
+  display: inline;
+  fill: none;
+  stroke: #DEF2F7;
+  stroke-width: 5.9248; }
+
+.st1395 {
+  display: inline;
+  fill: none;
+  stroke: #C4E8F1;
+  stroke-width: 5.9248; }
+
+.st1396 {
+  display: inline;
+  fill: none;
+  stroke: #BAE4F0;
+  stroke-width: 5.9248; }
+
+.st1397 {
+  display: inline;
+  fill: none;
+  stroke: #C7E9F3;
+  stroke-width: 5.9248; }
+
+.st1398 {
+  display: inline;
+  fill: none;
+  stroke: #B5E3F0;
+  stroke-width: 5.9248; }
+
+.st1399 {
+  display: inline;
+  fill: none;
+  stroke: #C2E7F3;
+  stroke-width: 5.9248; }
+
+.st1400 {
+  display: inline;
+  fill: none;
+  stroke: #D4EEF4;
+  stroke-width: 5.9248; }
+
+.st1401 {
+  display: inline;
+  fill: none;
+  stroke: #BDE5F1;
+  stroke-width: 5.9248; }
+
+.st1402 {
+  display: inline;
+  fill: none;
+  stroke: #E6F5FA;
+  stroke-width: 5.9248; }
+
+.st1403 {
+  display: inline;
+  fill: none;
+  stroke: #F2FAFE;
+  stroke-width: 5.9248; }
+
+.st1404 {
+  display: inline;
+  fill: none;
+  stroke: #E7F5FA;
+  stroke-width: 5.9248; }
+
+.st1405 {
+  display: inline;
+  fill: none;
+  stroke: #EEF8FC;
+  stroke-width: 5.9248; }
+
+.st1406 {
+  display: inline;
+  fill: none;
+  stroke: #F4FBFE;
+  stroke-width: 5.9248; }
+
+.st1407 {
+  display: inline;
+  fill: none;
+  stroke: #DAF1F7;
+  stroke-width: 5.9248; }
+
+.st1408 {
+  display: inline;
+  fill: none;
+  stroke: #F6FAFE;
+  stroke-width: 5.9248; }
+
+.st1409 {
+  display: inline;
+  fill: none;
+  stroke: #EBF4FB;
+  stroke-width: 5.9248; }
